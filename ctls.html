@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CTLS • Kshitij Portfolio</title>
+    <meta name="description" content="A refresh for Cobb Teaching & Learning System, focusing on improving functionality and ease of use" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:opsz,wght@14..32,200..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      body, h1, h2, h3, h4, h5, h6, p, a, span, div {
+        font-family: 'Instrument Sans', sans-serif !important;
+      }
+      /* Make all non-heading text thinner across the page */
+      body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+        font-weight: 100 !important;
+      }
+      /* Slightly reduce navbar brand weight */
+      .nav .logo { font-family: 'Plus Jakarta Sans', sans-serif !important; font-weight: 600 !important; }
+      .overview-heading {
+        font-weight: 400 !important;
+      }
+      .overview-heading::after {
+        background-color: #E55050 !important;
+      }
+      
+      /* Enlarge the video in CTLS */
+      .project-video-player {
+        max-width: none !important;
+        width: 120% !important;
+        transform: scale(1.2) !important;
+        margin: 0 auto !important;
+        display: block !important;
+      }
+      
+      /* Move overview section down in CTLS */
+      .project-overview {
+        margin-top: 100px !important;
+      }
+      
+      /* Reduce space above Ideate section in CTLS */
+      .project-ideate {
+        margin-top: 20px !important;
+      }
+      
+      /* Reduce space between Overview and Process in CTLS */
+      .project-process {
+        margin-top: 40px !important;
+      }
+      .overview-text {
+        color: #4a5568 !important;
+        font-weight: 200 !important;
+      }
+      .project-overview p,
+      .project-overview li {
+        font-weight: 200 !important;
+        color: #4a5568 !important;
+      }
+      .project-detail-desc {
+        color: #4a5568 !important;
+      }
+      .process-heading {
+        font-weight: 400 !important;
+      }
+      .process-heading::after {
+        background-color: #E55050 !important;
+      }
+      .step-number {
+        background-color: #E55050 !important;
+      }
+      .step-title {
+        font-weight: 300 !important;
+      }
+      .empathize-heading {
+        font-weight: 400 !important;
+      }
+      .empathize-heading::after {
+        background-color: #E55050 !important;
+      }
+      .empathize-text {
+        color: #4a5568 !important;
+        font-weight: 200 !important;
+      }
+      .project-empathize p,
+      .project-empathize li {
+        font-weight: 200 !important;
+        color: #4a5568 !important;
+      }
+      .project-empathize .research-cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 8px;
+      }
+      .project-empathize .research-card {
+        border: 1px solid #E55050 !important;
+        border-radius: 9999px !important;
+        padding: 16px 24px;
+        background: #ffffff;
+        display: block;
+        text-align: center;
+        min-height: 48px;
+        line-height: 1.45;
+        word-break: normal;
+        overflow-wrap: anywhere;
+        hyphens: none;
+      }
+      .project-empathize .research-cards .research-card:nth-child(1) {
+        padding-top: 36px;
+      }
+      .project-empathize .research-cards .research-card:nth-child(2) {
+        padding-top: 30px;
+      }
+      .project-empathize .research-card strong {
+        font-weight: 400 !important;
+        color: inherit !important;
+      }
+      .project-empathize ul.empathize-text li {
+        line-height: 1.8 !important;
+        margin-bottom: 6px !important;
+      }
+      /* Define > Problem styles */
+      .problem-text { 
+        color: #4a5568 !important; 
+        font-weight: 200 !important; 
+        margin-bottom: 20px !important;
+        line-height: 1.6 !important;
+      }
+      .problem-pills {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 24px 0;
+      }
+      .problem-pill {
+        border: 1px solid #E55050;
+        border-radius: 9999px;
+        padding: 10px 16px;
+        background: #ffffff;
+        text-align: center;
+        line-height: 1.45;
+        color: #4a5568;
+        font-weight: 200;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 80px;
+        padding-top: 16px;
+      }
+      .pill-title {
+        font-weight: 500 !important;
+        color: #0f172a;
+        margin-bottom: 4px;
+      }
+      .pill-text {
+        font-weight: 200;
+        color: #4a5568;
+      }
+      .ideate-intro {
+        color: #4a5568 !important;
+        font-weight: 200 !important;
+        margin-bottom: 20px !important;
+        line-height: 1.6 !important;
+      }
+      .ideate-pills {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin: 24px 0;
+      }
+      .ideate-pill {
+        border: 1px solid #E55050;
+        border-radius: 9999px;
+        padding: 20px 24px;
+        background: #ffffff;
+        text-align: center;
+        line-height: 1.45;
+        color: #4a5568;
+        font-weight: 200;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100px;
+      }
+      .pill-number {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #E55050;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 8px;
+        vertical-align: top;
+        margin-top: 1px;
+      }
+      /* Prototype section styles */
+      .prototype-process {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin: 24px 0;
+        flex-wrap: wrap;
+      }
+      .process-step {
+        background-color: transparent;
+        color: #0f172a;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 14px;
+      }
+      .process-arrow {
+        color: #E55050;
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .user-flow-heading, .wireframes-heading, .high-fidelity-heading {
+        font-size: 22px !important;
+        font-weight: 400 !important;
+        margin-top: 32px !important;
+        margin-bottom: 16px !important;
+        color: #0f172a !important;
+      }
+      .user-flow-image {
+        text-align: right !important;
+        margin: 16px 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 450px;
+        width: 100%;
+      }
+      .wireframes-image {
+        text-align: center !important;
+        margin: 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 150px;
+      }
+      .flow-image {
+        max-width: 250%;
+        width: 250%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .wireframes-img {
+        max-width: 150%;
+        width: 150%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .existing-design-image {
+        text-align: center;
+        margin: 16px 0;
+      }
+      .existing-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .high-fidelity-images {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 60px;
+        margin: 16px 0;
+      }
+      .high-fidelity-image {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .high-fidelity-img {
+        max-width: 130%;
+        width: 130%;
+        height: auto;
+        border-radius: 8px !important;
+      }
+      .empathize-subheading {
+        font-size: 22px !important;
+        font-weight: 400 !important;
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+        color: #0f172a !important;
+      }
+      .empathize-miniheading {
+        font-size: 20px !important;
+        font-weight: 400 !important;
+        margin-top: 12px !important;
+        margin-bottom: 8px !important;
+        color: #0f172a !important;
+      }
+      /* Add extra space before Problem subheading under Define */
+      .project-define .empathize-subheading { margin-top: 48px !important; }
+      /* Key Insights styling to match User Research pills */
+      .insights-heading { font-weight: 400 !important; font-size: 20px !important; }
+      .insights-heading::after { background-color: #E55050 !important; }
+      .insights-chart {
+        padding: 0;
+        background: transparent;
+        border: 0;
+      }
+      .insights-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* side by side */
+        gap: 16px; /* match User Research pill gap */
+        margin-top: 8px;
+      }
+      .insights-title {
+        font-weight: 400 !important;
+        margin: 0 0 16px !important; /* extra space before list */
+        color: #0f172a !important;
+        white-space: nowrap; /* keep titles on one line so both start aligned */
+      }
+      .insights-section {
+        border: 1px solid #E55050 !important;
+        border-radius: 200px !important; /* more pill-like */
+        background: #ffffff;
+        padding: 6px 80px; /* longer feel */
+        width: 100%;
+        max-width: 100%;
+        margin: 0; /* remove extra spacing */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertically center content */
+        text-align: center;
+      }
+      .insights-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      /* Add top margin for lists inside the pill boxes */
+      .insights-section .insights-list { margin-top: 12px; }
+      .insights-list li {
+        border: 1px solid #E55050 !important; /* red outline */
+        border-radius: 9999px !important; /* pill shape */
+        background: #ffffff;
+        padding: 10px 14px;
+        text-align: center;
+        line-height: 1.45;
+      }
+      /* For the first column (Insights), remove pills and number items */
+      .insights-grid .insights-section:first-child .insights-list {
+        list-style: decimal inside;
+        padding: 0;
+        margin: 0;
+        display: block;
+        gap: 0;
+        text-align: center;
+      }
+      .insights-grid .insights-section:first-child .insights-list li {
+        border: 0 !important;
+        border-radius: 0 !important;
+        background: transparent;
+        padding: 0;
+        text-align: center;
+        line-height: 1.6;
+      }
+      /* For the second column (Notes), remove capsule styling */
+      .insights-grid .insights-section:last-child .insights-list {
+        list-style: decimal inside;
+        padding: 0;
+        margin: 0;
+        display: block;
+        gap: 0;
+        text-align: center;
+      }
+      .insights-grid .insights-section:last-child .insights-list li {
+        border: 0 !important;
+        border-radius: 0 !important;
+        background: transparent;
+        padding: 0;
+        text-align: center;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" data-reveal>
+      <nav class="nav container">
+        <a href="index.html" class="logo" aria-label="Kshitij Home">kshitij</a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html#work" data-nav>My Work</a></li>
+          <li><a href="contact.html" class="button cta" data-nav>Get in Touch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="site-main">
+      <section class="project-detail container" aria-label="Project detail">
+        <div class="project-detail-content" data-reveal>
+          <div class="project-header">
+            <a href="index.html" class="back-arrow" aria-label="Back to home">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+            </a>
+            <h1 class="project-detail-title">CTLS</h1>
+          </div>
+          <p class="project-detail-desc">A refresh for Cobb Teaching & Learning System, focusing on improving functionality and ease of use</p>
+          <div class="project-video">
+        <video autoplay loop muted playsinline class="project-video-player">
+          <source src="./assets/ctls6.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+          </div>
+          <div class="project-overview">
+            <h2 class="overview-heading">Overview</h2>
+            <p class="overview-text">CTLS (Cobb Teaching and Learning System) is an education platform used by students and teachers for managing classes, grades, and assignments.</p>
+            <p class="overview-text">While CTLS serves an important purpose, its interface often felt overwhelming, outdated, and inefficient — especially for students navigating multiple classes each day.</p>
+            <p class="overview-text">This redesign focuses on making CTLS student-centered, intuitive, and visually modern, using insights from user feedback</p>
+          </div>
+          <div class="project-process">
+            <h2 class="process-heading">Process</h2>
+            <div class="process-steps">
+              <div class="process-step">
+                <div class="step-number">1</div>
+                <h3 class="step-title">Empathize</h3>
+              </div>
+              <div class="process-step">
+                <div class="step-number">2</div>
+                <h3 class="step-title">Define</h3>
+              </div>
+              <div class="process-step">
+                <div class="step-number">3</div>
+                <h3 class="step-title">Ideate</h3>
+              </div>
+              <div class="process-step">
+                <div class="step-number">4</div>
+                <h3 class="step-title">Prototype</h3>
+              </div>
+              <div class="process-step">
+                <div class="step-number">5</div>
+                <h3 class="step-title">Test</h3>
+              </div>
+            </div>
+          </div>
+          <div class="project-empathize">
+            <h2 class="empathize-heading">Empathize</h2>
+            <p class="empathize-text">I personally used CTLS for many semesters, and while this platform serves an important purpose, its interface often felt overwhelming and inefficient</p>
+            <h3 class="empathize-subheading">User Research</h3>
+            <p class="empathize-text">To better understand user pain points and needs, I conducted a small-scale user research study that included:</p>
+            <div class="research-cards">
+              <div class="research-card empathize-text">5 <strong>interviews</strong> with current high school students.</div>
+              <div class="research-card empathize-text">A short online <strong>survey</strong> shared among peers (12 responses).</div>
+              <div class="research-card empathize-text"><strong>Usability observation sessions</strong> where participants completed common tasks in the current CTLS interface.</div>
+            </div>
+            <h4 class="empathize-miniheading">A Few Key Questions</h4>
+            <ul class="empathize-text" style="list-style: disc inside; padding-left: 0; margin-top: 28px;">
+              <li>How do you currently use CTLS?</li>
+              <li>What frustrates you most about the interface?</li>
+              <li>Which tasks are most important or frequent?</li>
+              <li>How engaging is CTLS to you?</li>
+            </ul>
+            <div class="insights-chart">
+              <h4 class="insights-heading">Key Insights</h4>
+              <div class="insights-grid">
+                <div class="insights-section">
+                  <h5 class="insights-title">Insights</h5>
+                  <ol class="insights-list">
+                    <li>Too many steps to find assignments</li>
+                    <li>Resources are hard to find</li>
+                    <li>Hard to distinguish between classes</li>
+                    <li>Visually outdated</li>
+                  </ol>
+                </div>
+                <div class="insights-section">
+                  <h5 class="insights-title">Notes for my design</h5>
+                  <ol class="insights-list">
+                    <li>Simplify navigation and group related features together</li>
+                    <li>Organize various resources</li>
+                    <li>Keep teachers and classes visible persistently on the left</li>
+                    <li>Modernize the interface</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="project-define">
+              <h2 class="empathize-heading">Define</h2>
+              <h3 class="empathize-subheading">Problem</h3>
+              <p class="problem-text">Students and teachers both rely on CTLS daily, yet the interface made common tasks harder than necessary.</p>
+              <p class="problem-text">Through firsthand experience and peer feedback, I identified major usability issues:</p>
+
+              <div class="problem-pills">
+                <div class="problem-pill">
+                  <div class="pill-title">
+                    <span class="pill-number">1</span>Cluttered Layout
+                  </div>
+                  <div class="pill-text">Too many icons and nested menus.</div>
+                </div>
+                <div class="problem-pill">
+                  <div class="pill-title">
+                    <span class="pill-number">2</span>Navigation Overload
+                  </div>
+                  <div class="pill-text">Finding grades or assignments required multiple clicks.</div>
+                </div>
+                <div class="problem-pill">
+                  <div class="pill-title">
+                    <span class="pill-number">3</span>Lack of Clarity
+                  </div>
+                  <div class="pill-text">Teacher names and class info were buried or inconsistent.</div>
+                </div>
+                <div class="problem-pill">
+                  <div class="pill-title">
+                    <span class="pill-number">4</span>Low Engagement
+                  </div>
+                  <div class="pill-text">Outdated visuals made the system feel less inviting.</div>
+                </div>
+              </div>
+
+              <p class="problem-text">As a student user, I wanted to design a system that felt clear, motivating, and human-centered.</p>
+            </div>
+          </div>
+          
+          <div class="project-ideate">
+            <h2 class="empathize-heading">Ideate</h2>
+            <h3 class="empathize-subheading" style="margin-top: 48px !important;">Existing Design</h3>
+            
+            <div class="existing-design-image">
+              <img src="./assets/oldctls.png" alt="Existing CTLS Design" class="existing-img" />
+            </div>
+            
+            <h3 class="empathize-subheading" style="margin-top: 48px !important;">Information Architecture</h3>
+            
+            <p class="ideate-intro">I decided to restructure CTLS around an efficient user flow</p>
+            
+            <div class="ideate-pills">
+              <div class="ideate-pill">
+                <div class="pill-text">Classes and teachers live in a persistent left sidebar, always visible and easy to access</div>
+              </div>
+              <div class="ideate-pill">
+                <div class="pill-text">The main navigation elements moves to a horizontal top bar, separating global and contextual actions</div>
+              </div>
+              <div class="ideate-pill">
+                <div class="pill-text">Redundant menus will be removed, and icons will be standardized</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-prototype">
+            <h2 class="empathize-heading">Prototype</h2>
+            <div class="prototype-content">
+              <div class="prototype-process">
+                <span class="process-step">User Flows</span>
+                <span class="process-arrow">→</span>
+                <span class="process-step">Wireframes</span>
+                <span class="process-arrow">→</span>
+                <span class="process-step">High Fidelity Designs</span>
+                <span class="process-arrow">→</span>
+                <span class="process-step">Prototype</span>
+              </div>
+            </div>
+            <h3 class="empathize-subheading" style="margin-top: 48px !important;">User Flow</h3>
+            
+            <div class="user-flow-image">
+              <img src="./assets/Frame 29 (3).png" alt="CTLS User Flow Diagram" class="flow-image" />
+            </div>
+            
+            <h3 class="empathize-subheading" style="margin-top: 48px !important;">Wireframes</h3>
+            
+            <div class="wireframes-image">
+              <img src="./assets/Frame 30 (3).png" alt="CTLS Wireframes" class="wireframes-img" />
+            </div>
+            
+            <div class="wireframes-image">
+              <img src="./assets/Frame 31.png" alt="CTLS Wireframes" class="wireframes-img" />
+            </div>
+            
+            <div class="wireframes-image">
+              <img src="./assets/Frame 32.png" alt="CTLS Wireframes" class="wireframes-img" />
+            </div>
+            
+            <h3 class="empathize-subheading" style="margin-top: 48px !important;">High Fidelity Designs</h3>
+            
+            <div class="high-fidelity-image" style="margin-top: 32px !important;">
+              <img src="./assets/Frame 33 (1).png" alt="CTLS High Fidelity Design" class="high-fidelity-img" loading="eager" fetchpriority="high" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container" data-reveal>
+      <p>© <span id="year"></span> Kshitij Badve</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

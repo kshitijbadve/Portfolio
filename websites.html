@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Clients • Kshitij Portfolio</title>
+  <meta name="description" content="Website design and development projects for various clients" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .project-detail-title {
+      font-weight: 300 !important;
+    }
+    .project-detail-desc {
+      font-weight: 300 !important;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 0 !important;
+    }
+    .project-image img {
+      max-width: 60%;
+      height: auto;
+    }
+    /* Tighten spacing between consecutive description lines */
+    .project-detail-desc + .project-detail-desc { 
+      margin-top: 0px !important; 
+    }
+    .project-image--wide img {
+      max-width: 80%;
+    }
+    .project-image--small {
+      margin-top: 72px;
+    }
+    .project-image--small img {
+      max-width: 20%;
+    }
+    .image-caption {
+      margin-top: 6px;
+      font-size: 0.85rem;
+      color: #4a5568;
+      text-align: center;
+    }
+    .project-image--spaced {
+      margin-top: 36px;
+    }
+    .project-image--lower {
+      margin-top: 96px;
+    }
+    .showcase-heading {
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      margin-top: 12px;
+      color: #0f172a;
+    }
+    .showcase-subtitle {
+      color: #0f172a !important;
+      margin-bottom: 4px !important;
+    }
+    .showcase-subtitle + .project-detail-desc {
+      margin-top: 4px !important;
+    }
+    /* Accent line color for section heading */
+    .empathize-heading::after {
+      background-color: #203318 !important;
+    }
+    /* Side-by-side images for branding section */
+    .branding-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      align-items: center;
+      justify-items: center;
+      margin-top: 36px;
+    }
+    .branding-grid img {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+    }
+    /* Align captions under both images */
+    .branding-grid .image-caption {
+      margin-top: 4px;
+    }
+    .branding-grid .branding-item:nth-child(1) .image-caption {
+      margin-top: 24px;
+    }
+    /* MacBook with embedded video */
+    .macbook-video {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 36px auto 0;
+    }
+    .macbook-video img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .macbook-video .screen-video {
+      position: absolute;
+      top: 9.6%;            /* nudged down slightly */
+      left: 10.1%;
+      width: 79.8%;
+      height: 77.5%;        /* fill more of the screen height */
+      object-fit: cover;
+      object-position: top center; /* keep top of video visible */
+      border-radius: 8px 8px 0 0; /* square bottom corners */
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+      pointer-events: none;
+    }
+
+    /* Black mask to fill remaining bottom of screen below the video */
+    .macbook-video .screen-mask {
+      position: absolute;
+      left: 10.1%;
+      width: 79.8%;
+      top: calc(9.6% + 77.5%);
+      height: 3.2%;
+      background: #000000;
+      border-radius: 0 0 0 0;
+      pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+      .macbook-video { max-width: 100%; }
+      .macbook-video .screen-video {
+        top: 10.0%;
+        left: 9.7%;
+        width: 80.6%;
+        height: 78.5%;
+        object-position: top center;
+      }
+      .macbook-video .screen-mask {
+        left: 9.7%;
+        width: 80.6%;
+        top: calc(10.0% + 78.5%);
+        height: 3.0%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" data-reveal>
+      <nav class="nav container">
+        <a href="index.html" class="logo" aria-label="Kshitij Home">kshitij</a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html#work" data-nav>My Work</a></li>
+          <li><a href="contact.html" class="button cta" data-nav>Get in Touch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <main class="site-main" id="main">
+    <section class="project-detail container" aria-label="Project detail">
+      <div class="project-detail-content" data-reveal>
+        <div class="project-header">
+          <a href="index.html" class="back-arrow" aria-label="Back to home">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+          </a>
+          <h1 class="project-detail-title">Website Clients</h1>
+        </div>
+        <p class="project-detail-desc">My work for various clients focuses on improving digital presence through designing and developing functional, responsive, and visually compelling websites and improving branding as necessary</p>
+        <div class="project-image">
+          <img src="./assets/websites.png" alt="Website Clients Projects" />
+        </div>
+        <h3 class="showcase-heading">SHOWCASE</h3>
+        <h1 class="project-detail-title" style="margin-top: 6px;">MK Group Construction</h1>
+        <p class="project-detail-desc showcase-subtitle">Commercial construction company</p>
+        <p class="project-detail-desc">MK Group Construction has a great reputation in the construction space, and the company has been in business for over 20 years. The company's original branding, messaging, and website was outdated and did not reflect their ideology. The style did not resemble an experienced construction company, so I refreshed the branding and redesigned the logo to build trust. I used this new branding throughout the design of a new website.</p>
+        <div class="project-image project-image--small">
+          <img src="./assets/mk_old.avif" alt="MK Group Construction - original website and branding" loading="lazy" />
+        </div>
+        <p class="image-caption">Previous Logo</p>
+
+        <h2 class="empathize-heading" style="margin-top: 56px !important;">Refreshed Branding</h2>
+        <div class="branding-grid">
+          <div class="branding-item">
+            <img src="./assets/colors2.png" alt="Refreshed branding color palette" loading="lazy" />
+            <p class="image-caption">Color Palette</p>
+          </div>
+          <div class="branding-item">
+            <img src="./assets/typo.png" alt="Typography system" loading="lazy" />
+            <p class="image-caption">Typography</p>
+          </div>
+        </div>
+        <div class="macbook-video">
+          <img src="./assets/macbook.png" alt="Website mockups on MacBook" />
+          <video class="screen-video" autoplay loop muted playsinline>
+            <source src="./assets/website.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="screen-mask"></div>
+        </div>
+        <div class="project-image project-image--spaced project-image--lower project-image--wide">
+          <img src="./assets/screens2.png" alt="Website screens overview" loading="lazy" />
+        </div>
+        <h2 class="empathize-heading" style="margin-top: 56px !important;">Design and Development</h2>
+        <p class="project-detail-desc"><strong>Design:</strong> Figma and Adobe Illustrator</p>
+        <p class="project-detail-desc"><strong>Development:</strong> Framer and React.js components (HTML & CSS used in other projects)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container" data-reveal>
+    <p>&copy; <span id="year"></span> Kshitij Badve</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Sports Companion • Kshitij Portfolio</title>
+  <meta name="description" content="A React Native app built for a HackGT 12 challenge sponsored by PrizePicks" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .project-detail-title {
+      font-weight: 300 !important;
+    }
+    .project-detail-desc {
+      font-weight: 300 !important;
+      margin-bottom: 8px !important;
+    }
+    .overview-heading {
+      font-weight: 400 !important;
+    }
+    .overview-heading::after {
+      background-color: #8000FF !important;
+    }
+    .overview-text {
+      color: #4a5568 !important;
+      font-weight: 200 !important;
+      line-height: 1.8 !important;
+    }
+    .project-overview p,
+    .project-overview li {
+      font-weight: 200 !important;
+      color: #4a5568 !important;
+    }
+    .project-design p {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .project-design p:first-child {
+      margin-bottom: 120px !important;
+    }
+    .design-second {
+      margin-top: 40px !important;
+    }
+    .design-image {
+      text-align: center;
+      margin: 32px 0;
+    }
+    .design-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .development-image {
+      text-align: center;
+      margin: 32px 0;
+    }
+    .development-img {
+      max-width: 500px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .project-image {
+      text-align: center;
+      margin: 32px 0 32px 0;
+    }
+    .project-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .phone-mockup {
+      display: flex;
+      justify-content: center;
+      margin: 5px 0 40px 0;
+    }
+    .phone-container {
+      position: relative;
+      max-width: 300px;
+      width: 100%;
+    }
+    .phone-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .phone-screen {
+      position: absolute;
+      top: 3%;
+      left: 6%;
+      right: 6%;
+      bottom: 3%;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+    .phone-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" data-reveal>
+      <nav class="nav container">
+        <a href="index.html" class="logo" aria-label="Kshitij Home">kshitij</a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html#work" data-nav>My Work</a></li>
+          <li><a href="contact.html" class="button cta" data-nav>Get in Touch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <main class="site-main" id="main">
+    <section class="project-detail container" aria-label="Project detail">
+      <div class="project-detail-content" data-reveal>
+        <div class="project-header">
+          <a href="index.html" class="back-arrow" aria-label="Back to home">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+          </a>
+          <h1 class="project-detail-title">Live Sports Companion</h1>
+        </div>
+        <p class="project-detail-desc">For the React Native challenge during HackGT 12, I fully designed and developed this project</p>
+        <div class="phone-mockup">
+          <div class="phone-container">
+            <img src="./assets/phone.png" alt="Phone mockup" class="phone-image" />
+            <div class="phone-screen">
+              <video class="phone-video" autoplay muted loop>
+                <source src="./assets/hackgt2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="project-overview">
+          <h2 class="overview-heading">Overview</h2>
+          <p class="overview-text">This app transforms the sports experience to be <strong>more interactive</strong>, allowing users to engage more with their parlays. The core features include live sports coverage and updates, game predictions, interactive polls, watch parties to enjoy sports with friends, and key highlights which users can watch.</p>
+        </div>
+        <div class="project-design">
+          <h2 class="overview-heading">Design</h2>
+          <p class="overview-text">I used Figma to visualize and create high fidelity screens showing the placement of various desired features and an efficient flow.</p>
+          <p class="overview-text design-second">Since this app serves as a companion to PrizePicks to allow users to engage with the parlays they created in the existing app, I decided to match the design style so that users would immediately feel a sense of familiarity and continuity between the two experiences, making it easier to navigate, trust, and transition into this live sports app without needing to relearn the interface or visual language.</p>
+          <div class="design-image">
+            <img src="./assets/sports_screens.png" alt="Live Sports Companion App Screens" class="design-img" />
+          </div>
+          <div class="design-image">
+            <img src="./assets/sports_screens2.png" alt="Live Sports Companion App Screens 2" class="design-img" />
+          </div>
+        </div>
+        <div class="project-development">
+          <h2 class="overview-heading">Development</h2>
+          <div class="development-image">
+            <img src="./assets/stack.png" alt="Technology Stack" class="development-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container" data-reveal>
+    <p>&copy; <span id="year"></span> Kshitij Badve</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

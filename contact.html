@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact • Kshitij Portfolio</title>
+    <meta name="description" content="Get in touch with Kshitij for product design opportunities, consulting, and collaborations." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" data-reveal>
+      <nav class="nav container">
+        <a href="index.html" class="logo" aria-label="Kshitij Home">kshitij</a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html#work" data-nav>My Work</a></li>
+          <li><a href="contact.html" class="button cta active" data-nav>Get in Touch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="site-main">
+      <!-- Contact page content -->
+      <section class="contact-page container" aria-label="Contact" data-reveal>
+        <div class="contact-page-content">
+          <p class="contact-label">Contact</p>
+          <h1 class="contact-title">Let's work together</h1>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-label-item">Email</span>
+              <a href="mailto:kshitij.badve@gmail.com" class="contact-value">
+                kshitij.badve@gmail.com
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 12L12 4M12 4H6M12 4V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="contact-item">
+              <span class="contact-label-item">Phone</span>
+              <span class="contact-value">678 - 542 - 6945</span>
+            </div>
+            
+            <div class="contact-item">
+              <span class="contact-label-item">Address</span>
+              <div class="contact-value address-value">
+                Atlanta, GA<br>
+                Georgia Institute of Technology
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <span class="contact-label-item">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/kshitij-badve" class="contact-value" target="_blank" rel="noopener">
+                LinkedIn
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 12L12 4M12 4H6M12 4V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container" data-reveal>
+      <p>© <span id="year"></span> Kshitij Badve</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

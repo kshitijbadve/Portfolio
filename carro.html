@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>carro • Kshitij Portfolio</title>
+    <meta name="description" content="A sleek mobile app for car enthusiasts and casual admirers to explore, compare, and learn about cars." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      /* Slightly lighter brand weight to match CTLS */
+      .nav .logo { font-weight: 600 !important; }
+      
+      /* Enlarge the video in carro */
+      .project-video-player {
+        max-width: none !important;
+        width: 120% !important;
+        transform: scale(1.2) !important;
+        margin: 0 auto !important;
+        display: block !important;
+      }
+      
+      /* Move arrow down slightly in carro */
+      .project-header .back-arrow {
+        top: 20px !important;
+      }
+      
+      /* Move overview section down in carro */
+      .project-overview {
+        margin-top: 100px !important;
+      }
+      
+      /* Reduce space above Ideate section in carro */
+      .project-ideate {
+        margin-top: 20px !important;
+      }
+      
+      /* Reduce space between Overview and Process in carro */
+      .project-process {
+        margin-top: 40px !important;
+      }
+      
+      /* Style for high fidelity image in carro */
+      .high-fidelity-image {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+      }
+      .high-fidelity-img {
+        width: 120%;
+        height: auto;
+        border-radius: 8px;
+        max-width: none;
+        margin-left: -10%;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" data-reveal>
+      <nav class="nav container">
+        <a href="index.html" class="logo" aria-label="Kshitij Home">kshitij</a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html#work" data-nav>My Work</a></li>
+          <li><a href="contact.html" class="button cta" data-nav>Get in Touch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="site-main">
+      <section class="project-detail container" aria-label="Project detail">
+        <div class="project-detail-content" data-reveal>
+          <div class="project-header">
+            <a href="index.html" class="back-arrow" aria-label="Back to home">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+            </a>
+            <h1 class="project-detail-title">carro</h1>
+          </div>
+          <p class="project-detail-desc">A sleek mobile app for car enthusiasts and casual admirers to explore, compare, and learn about cars.</p>
+          <div class="project-video">
+            <video autoplay loop muted playsinline class="project-video-player">
+              <source src="./assets/carrovid2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="project-overview">
+            <h2 class="overview-heading">Overview</h2>
+            <p class="overview-text">Carro is a mobile application designed to make researching cars engaging, informative, and visually immersive.</p>
+            <p class="overview-text">Whether you're a car enthusiast, a potential buyer, or someone simply curious about different models, carro offers a streamlined way to browse categories, view specifications, and compare options.</p>
+          </div>
+          <div class="project-process">
+            <h2 class="process-heading">Process</h2>
+            <div class="process-steps">
+              <div class="process-step">
+                <div class="step-number">1</div>
+                <h3 class="step-title">Empathize</h3>
+              </div>
+              <div class="process-step">
+                <div class="step-number">2</div>
+                <h3 class="step-title">Define</h3>
+              </div>
+              <div class="process-step">
+                <div class="step-number">3</div>
+                <h3 class="step-title">Ideate</h3>
+              </div>
+              <div class="process-step">
+                <div class="step-number">4</div>
+                <h3 class="step-title">Prototype</h3>
+              </div>
+              <div class="process-step">
+                <div class="step-number">5</div>
+                <h3 class="step-title">Test</h3>
+              </div>
+            </div>
+          </div>
+          <div class="project-empathize">
+            <h2 class="empathize-heading">Empathize</h2>
+            <div class="empathize-content">
+              <p class="empathize-text">I conducted <strong>secondary research</strong>, <strong>competitive analysis</strong>, and <strong>informal user interviews</strong> with 5 participants who fit the target audience profiles (car enthusiasts, potential buyers, casual learners).</p>
+              
+              <div class="competitor-analysis">
+                <h3 class="analysis-heading">Competitor Analysis</h3>
+                <table class="analysis-table">
+                  <thead>
+                    <tr>
+                      <th class="competitor-col">COMPETITOR</th>
+                      <th class="strengths-col">STRENGTHS</th>
+                      <th class="weaknesses-col">WEAKNESSES</th>
+                      <th class="opportunities-col">OPPORTUNITIES FOR CARRO</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="competitor-cell">
+                        <div class="competitor-logo">
+                          <img src="./assets/edmundslogo.png" alt="Edmunds" class="logo-image edmunds-logo" />
+                        </div>
+                      </td>
+                      <td class="analysis-cell">comprehensive reviews, strong brand trust</td>
+                      <td class="analysis-cell">outdated UI</td>
+                      <td class="analysis-cell">Simplify content delivery with visuals-first approach</td>
+                    </tr>
+                    <tr>
+                      <td class="competitor-cell">
+                        <div class="competitor-logo">
+                          <img src="./assets/Carvana Logo Vector.svg .png" alt="Carvana" class="logo-image carvana-logo" />
+                        </div>
+                      </td>
+                      <td class="analysis-cell">Intuitive car search, appealing imagery</td>
+                      <td class="analysis-cell">focus primarily on sales</td>
+                      <td class="analysis-cell">expand to an educational, research-focused experience</td>
+                    </tr>
+                    <tr>
+                      <td class="competitor-cell">
+                        <div class="competitor-logo">
+                          <img src="./assets/topgear.png" alt="TopGear" class="logo-image topgear-logo" />
+                        </div>
+                      </td>
+                      <td class="analysis-cell">strong entertainment content</td>
+                      <td class="analysis-cell">less structured data about various cars</td>
+                      <td class="analysis-cell">combine entertaining aspect with structured specs</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="key-takeaway">
+                  <h3 class="takeaway-heading">Key Takeaway</h3>
+                  <p class="takeaway-text">Most competitors either focus on transactional buying (Carvana) or entertainment/editorial (Top Gear). There's a gap for a <strong>research-first platform</strong> that is <strong>visually engaging</strong> but still contains <strong>relevant data</strong></p>
+                </div>
+                
+                <div class="user-personas">
+                  <h3 class="personas-heading">User Interviews</h3>
+                  <div class="personas-grid">
+                    <div class="persona-group">
+                      <h4 class="persona-category">Car Enthusiasts (2)</h4>
+                      <div class="persona-item">
+                        <div class="persona-name">Nick, 21</div>
+                        <div class="persona-role">College Car Enthusiast</div>
+                      </div>
+                      <div class="persona-item">
+                        <div class="persona-name">Alex, 32</div>
+                        <div class="persona-role">Car Blogger</div>
+                      </div>
+                    </div>
+                    
+                    <div class="persona-group">
+                      <h4 class="persona-category">Potential Buyers (2)</h4>
+                      <div class="persona-item">
+                        <div class="persona-name">Parth, 31</div>
+                        <div class="persona-role">First-time Buyer</div>
+                      </div>
+                      <div class="persona-item">
+                        <div class="persona-name">Sadhana, 42</div>
+                        <div class="persona-role">Upgrading Family Car</div>
+                      </div>
+                    </div>
+                    
+                    <div class="persona-group">
+                      <h4 class="persona-category">Casual Learner (1)</h4>
+                      <div class="persona-item">
+                        <div class="persona-name">Shubham, 18</div>
+                        <div class="persona-role">Enjoys Exploring Cars</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="interview-questions">
+                    <h4 class="questions-heading">Interview Questions</h4>
+                    <ol class="questions-list">
+                      <li>How do you currently learn about cars?</li>
+                      <li>What frustrates you most about this process?</li>
+                      <li>What would make it easier or more enjoyable?</li>
+                    </ol>
+                  </div>
+                  
+                  <div class="insights-chart">
+                    <h4 class="insights-heading">Key Insights</h4>
+                    <div class="insights-grid">
+                      <div class="insights-section">
+                        <h5 class="insights-title">Insights</h5>
+                        <ol class="insights-list">
+                          <li>Users want quick overviews before deep dives</li>
+                          <li>Large visuals keep users engaged longer</li>
+                          <li>Navigation should be intuitive and based on category</li>
+                        </ol>
+                      </div>
+                      <div class="insights-section">
+                        <h5 class="insights-title">Notes for my design</h5>
+                        <ol class="insights-list">
+                          <li>Use a card-based layout with headline specs and prices up front</li>
+                          <li>Hero images of each car to dominate the screen</li>
+                          <li>Simple categories differentiating types of cars</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-define">
+            <h2 class="define-heading">Define</h2>
+            <div class="define-content">
+              <p class="define-text">Based on user research insights, I defined the core problem and established clear design goals for the Carro application.</p>
+              
+              <div class="problem-section">
+                <h3 class="problem-heading">Problem</h3>
+                <p class="problem-intro">People interested in learning about cars often face two issues:</p>
+                <div class="problem-list">
+                  <div class="problem-item">
+                    <div class="problem-content">
+                      <div class="problem-header">
+                        <div class="problem-circle">1</div>
+                        <h4 class="problem-title">Scattered Information</h4>
+                      </div>
+                      <p class="problem-desc">Car details are spread across multiple sites and formats, making comparisons time-consuming</p>
+                    </div>
+                  </div>
+                  <div class="problem-item">
+                    <div class="problem-content">
+                      <div class="problem-header">
+                        <div class="problem-circle">2</div>
+                        <h4 class="problem-title">Lack of Visual Appeal</h4>
+                      </div>
+                      <p class="problem-desc">Most automotive databases focus heavily on technical specs but lack engaging design for casual exploration.</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="problem-solution">carro solves this by bringing together <strong>curated information</strong>, <strong>striking visuals</strong>, and <strong>intuitive navigation</strong> in a single mobile platform.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-ideate">
+            <h2 class="ideate-heading">Ideate</h2>
+            <div class="ideate-content">
+              <h3 class="target-audience-heading">Target Audience</h3>
+              <div class="audience-list">
+                <div class="audience-item">
+                  <h4 class="audience-title">Car Enthusiasts</h4>
+                  <p class="audience-desc">those who follow automotive trends and value aesthetics</p>
+                </div>
+                <div class="audience-item">
+                  <h4 class="audience-title">Potential Buyers</h4>
+                  <p class="audience-desc">users exploring options before making a purchase</p>
+                </div>
+                <div class="audience-item">
+                  <h4 class="audience-title">Casual Learners</h4>
+                  <p class="audience-desc">those curious about cars without technical knowledge</p>
+                </div>
+              </div>
+              
+              <h3 class="design-goals-heading">Design Goals</h3>
+              <div class="goals-list">
+                <div class="goal-item">
+                  <h4 class="goal-title">Visually Driven</h4>
+                  <p class="goal-desc">hero images of cars to spark curiosity</p>
+                </div>
+                <div class="goal-item">
+                  <h4 class="goal-title">Seamless Browsing</h4>
+                  <p class="goal-desc">a clean category-based layout with smooth transitions</p>
+                </div>
+                <div class="goal-item">
+                  <h4 class="goal-title">Accessible Information</h4>
+                  <p class="goal-desc">key details (price, mpg) visible without having to dig for it</p>
+                </div>
+                <div class="goal-item">
+                  <h4 class="goal-title">Nice Animations</h4>
+                  <p class="goal-desc">microinteractions for a nice feel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-prototype">
+            <h2 class="prototype-heading">Prototype</h2>
+            <div class="prototype-content">
+              <div class="prototype-process">
+                <span class="process-step">User Flows</span>
+                <span class="process-arrow">→</span>
+                <span class="process-step">Wireframes</span>
+                <span class="process-arrow">→</span>
+                <span class="process-step">High Fidelity Designs</span>
+                <span class="process-arrow">→</span>
+                <span class="process-step">Prototype</span>
+              </div>
+              
+              <h3 class="user-flow-heading">User Flow</h3>
+              <div class="user-flow-image">
+                <img src="./assets/Frame 28 (4).png" alt="User Flow Diagram" class="flow-image" />
+              </div>
+              
+              <h3 class="wireframes-heading">Wireframes</h3>
+              <div class="wireframes-image">
+                <img src="./assets/Frame 29 (2).png" alt="Wireframes" class="wireframes-img" />
+              </div>
+              
+              <h3 class="high-fidelity-heading">High Fidelity Designs</h3>
+              <div class="high-fidelity-image">
+                <img src="./assets/Frame 33 (2).png" alt="High Fidelity Designs" class="high-fidelity-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container" data-reveal>
+      <p>© <span id="year"></span> Kshitij Badve</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
