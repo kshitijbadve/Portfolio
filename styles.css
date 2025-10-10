@@ -179,6 +179,775 @@ body {
 .work { padding: 8px 0 24px; }
 .projects { display: grid; grid-template-columns: 1fr; gap: 64px; margin-top: 16px; }
 
+/* Mobile-first responsive improvements */
+@media (max-width: 768px) {
+  /* Container adjustments for mobile */
+  .container { 
+    width: 95%; 
+    padding: 0 16px;
+  }
+  
+  /* Navigation improvements */
+  .nav { 
+    padding: 12px 0 8px; 
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .nav .nav-links { 
+    gap: 16px; 
+    flex-wrap: wrap;
+  }
+  
+  .nav .nav-links a[data-nav] {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+  
+  /* Hero section mobile optimization */
+  .hero { 
+    padding: 24px 0 40px; 
+    text-align: center;
+  }
+  
+  .hero-copy .eyebrow {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-title {
+    font-size: clamp(20px, 5vw, 28px);
+    line-height: 1.5;
+    margin-bottom: 12px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-sub {
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  
+  .button {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+  
+  /* About section mobile */
+  .about-card {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .about-card h2 {
+    font-size: 20px;
+  }
+  
+  .about-card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Projects section mobile */
+  .projects {
+    gap: 20px;
+    margin-top: 32px;
+  }
+  
+  .project-card {
+    padding: 16px;
+  }
+  
+  .project-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .project-title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  
+  .project-arrow {
+    align-self: flex-end;
+    margin-left: 0;
+    margin-top: -8px;
+  }
+  
+  .project-desc {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 8px 0;
+  }
+  
+  .project-tags {
+    gap: 6px;
+    margin: 8px 0;
+  }
+  
+  .project-tags li {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  
+  /* Contact section mobile */
+  .contact-new {
+    padding: 40px 0;
+  }
+  
+  .contact-new-content {
+    text-align: center;
+  }
+  
+  .contact-new-title {
+    font-size: clamp(24px, 6vw, 36px);
+    margin: 12px 0 20px;
+  }
+  
+  .contact-new-button {
+    width: 100%;
+    max-width: 200px;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+  
+  /* Footer mobile */
+  .site-footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .site-footer p {
+    font-size: 14px;
+  }
+  
+  /* Contact page mobile improvements */
+  .contact-page {
+    padding: 40px 0 80px;
+  }
+  
+  .contact-page-content {
+    gap: 16px;
+  }
+  
+  .contact-label {
+    font-size: 12px;
+  }
+  
+  .contact-title {
+    font-size: clamp(28px, 8vw, 40px);
+    line-height: 1.1;
+  }
+  
+  .contact-details {
+    gap: 24px;
+    margin-top: 32px;
+  }
+  
+  .contact-item {
+    gap: 6px;
+  }
+  
+  .contact-label-item {
+    font-size: 12px;
+  }
+  
+  .contact-value {
+    font-size: 14px;
+  }
+  
+  /* Project detail pages mobile */
+  .project-detail-content {
+    padding: 20px 0 40px;
+  }
+  
+  .project-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .project-header .back-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-bottom: 0;
+  }
+  
+  .project-detail-title {
+    font-size: clamp(24px, 6vw, 36px);
+    text-align: center;
+    margin: 0;
+  }
+  
+  .project-overview {
+    margin-top: 24px;
+  }
+  
+  .overview-heading {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .overview-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  
+  .project-video-player {
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    margin: 16px 0 !important;
+  }
+  
+  /* Carro project video mobile fix - override desktop scaling */
+  .project-video {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+  
+  .project-video video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    object-fit: cover !important;
+  }
+  
+  /* Reduce spacing between video and Overview section on mobile */
+  .project-video {
+    margin-bottom: 10px !important;
+  }
+  
+  .project-overview {
+    margin-top: 0px !important;
+  }
+  
+  .high-fidelity-img {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  
+  /* Carro project images mobile fixes */
+  .logo-image {
+    height: 60px !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+  
+  .flow-image {
+    width: 300% !important;
+    margin-left: -250% !important;
+    max-width: none !important;
+    transform: scale(3) !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    margin-top: 20px !important;
+    position: relative !important;
+    left: -150px !important;
+  }
+  
+  .user-flow-heading {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    margin: 20px 0 12px 0 !important;
+    color: var(--text) !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    line-height: 1.2 !important;
+  }
+  
+  .user-flow-image {
+    width: 100% !important;
+    overflow: visible !important;
+    margin: 8px auto 16px auto !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  .wireframes-img {
+    width: 100% !important;
+    margin-left: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  /* Ensure all carro images are visible on mobile */
+  .user-flow-image,
+  .wireframes-image,
+  .high-fidelity-image {
+    width: 100% !important;
+    overflow: visible !important;
+    margin: 16px 0 !important;
+  }
+  
+  /* Competitor analysis table mobile fixes */
+  .competitor-analysis {
+    overflow-x: auto;
+    margin: 16px 0;
+  }
+  
+  .competitor-analysis .analysis-table {
+    min-width: 500px;
+    font-size: 12px;
+  }
+  
+  .competitor-analysis .analysis-table th,
+  .competitor-analysis .analysis-table td {
+    padding: 8px 6px;
+    min-width: 100px;
+  }
+  
+  /* User personas mobile layout */
+  .personas-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  
+  .persona-group {
+    margin-bottom: 8px !important;
+  }
+  
+  .persona-item {
+    margin-bottom: 4px !important;
+  }
+  
+  /* Ideate section header size reduction for mobile */
+  .target-audience-heading {
+    font-size: 16px !important;
+  }
+  
+  .audience-title {
+    font-size: 14px !important;
+  }
+  
+  /* Design Goals section header size reduction for mobile */
+  .design-goals-heading {
+    font-size: 16px !important;
+  }
+  
+  .goal-title {
+    font-size: 14px !important;
+  }
+  
+  /* Prototype process flow mobile - make it fit in one line */
+  .prototype-process {
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 8px 0 !important;
+  }
+  
+  .prototype-process .process-step {
+    font-size: 12px !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .prototype-process .process-arrow {
+    font-size: 14px !important;
+    flex-shrink: 0 !important;
+  }
+  
+  /* Ensure all content sections are properly spaced on mobile */
+  .project-ideate,
+  .project-process,
+  .project-define,
+  .project-empathize {
+    margin: 20px 0 !important;
+  }
+  
+  .empathize-heading,
+  .ideate-heading,
+  .define-heading,
+  .process-heading {
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  /* Comprehensive table mobile improvements */
+  .analysis-table {
+    font-size: 10px !important;
+    overflow: visible !important;
+    display: table !important;
+    width: 100% !important;
+    margin: 16px 0 !important;
+    border-collapse: separate !important;
+    border-spacing: 2px !important;
+    table-layout: fixed !important;
+  }
+  
+  .analysis-table thead {
+    display: table-header-group !important;
+  }
+  
+  .analysis-table tbody {
+    display: table-row-group !important;
+  }
+  
+  .analysis-table tr {
+    display: table-row !important;
+  }
+  
+  .analysis-table th,
+  .analysis-table td {
+    display: table-cell !important;
+    padding: 12px 8px !important;
+    width: 25% !important;
+    max-width: 25% !important;
+    text-align: left !important;
+    vertical-align: top !important;
+    border: 1px solid #e2e8f0 !important;
+    font-size: 10px !important;
+    line-height: 1.4 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    height: auto !important;
+    min-height: 60px !important;
+  }
+  
+  .analysis-table th {
+    font-weight: 600 !important;
+    background: #f8fafc !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 10 !important;
+    min-height: 40px !important;
+  }
+  
+  /* Competitor analysis specific mobile fixes */
+  .competitor-analysis {
+    overflow: visible !important;
+    margin: 16px 0 !important;
+    width: 100% !important;
+  }
+  
+  .competitor-analysis .analysis-table {
+    font-size: 9px !important;
+    display: table !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+  }
+  
+  .competitor-analysis .analysis-table th,
+  .competitor-analysis .analysis-table td {
+    padding: 10px 6px !important;
+    width: 25% !important;
+    max-width: 25% !important;
+    font-size: 9px !important;
+    display: table-cell !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    min-height: 50px !important;
+  }
+  
+  /* Heuristic analysis mobile */
+  .heuristic-analysis {
+    overflow: visible !important;
+    margin: 16px 0 !important;
+    width: 100% !important;
+  }
+  
+  .heuristic-analysis .analysis-table {
+    font-size: 10px !important;
+    display: table !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+  }
+  
+  .heuristic-analysis .analysis-table th,
+  .heuristic-analysis .analysis-table td {
+    padding: 12px 8px !important;
+    width: 33.33% !important;
+    max-width: 33.33% !important;
+    font-size: 10px !important;
+    display: table-cell !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    min-height: 60px !important;
+  }
+  
+  /* Table container improvements */
+  .analysis-heading {
+    font-size: 16px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  /* Ensure tables don't break layout */
+  .competitor-analysis,
+  .heuristic-analysis {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* CTLS insights grid mobile improvements */
+  .insights-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+  
+  .insights-section {
+    width: 100% !important;
+    max-width: none !important;
+    text-align: center !important;
+  }
+  
+  .insights-list {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    padding: 0 !important;
+    margin: 8px 0 !important;
+  }
+  
+  .insights-list li {
+    padding: 8px 12px !important;
+    margin: 4px 0 !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+  
+  .insights-heading {
+    font-size: 16px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .insights-title {
+    font-size: 14px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  /* Touch-friendly improvements */
+  .button,
+  .contact-new-button,
+  .back-arrow {
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-card {
+    min-height: 44px;
+  }
+  
+  /* Better spacing for mobile */
+  .section {
+    padding: 32px 0;
+  }
+  
+  .work {
+    padding: 16px 0 32px;
+  }
+  
+  /* Improve readability on mobile */
+  .project-desc,
+  .overview-text,
+  .empathize-text {
+    line-height: 1.5;
+  }
+  
+  /* Reduce font sizes for all body text on mobile */
+  .project-desc {
+    font-size: 13px !important;
+  }
+  
+  .overview-text {
+    font-size: 13px !important;
+  }
+  
+  .empathize-text {
+    font-size: 13px !important;
+  }
+  
+  .define-text,
+  .ideate-text,
+  .process-text {
+    font-size: 13px !important;
+  }
+  
+  .persona-name,
+  .persona-role {
+    font-size: 12px !important;
+  }
+  
+  .persona-category {
+    font-size: 11px !important;
+  }
+  
+  .step-text {
+    font-size: 13px !important;
+  }
+  
+  .analysis-cell {
+    font-size: 10px !important;
+  }
+  
+  .competitor-cell {
+    font-size: 10px !important;
+  }
+  
+  .logo-image {
+    height: 50px !important;
+  }
+  
+  /* Specific logo fixes for mobile tables */
+  .topgear-logo {
+    height: 20px !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
+  .edmunds-logo {
+    height: 40px !important;
+    width: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
+  .carvana-logo {
+    height: 35px !important;
+    width: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Competitor logo container */
+  .competitor-logo {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 60px !important;
+    width: 100% !important;
+  }
+  
+  /* Contact page text */
+  .contact-value {
+    font-size: 13px !important;
+  }
+  
+  .contact-label-item {
+    font-size: 11px !important;
+  }
+  
+  /* Project detail page text */
+  .project-detail-content p {
+    font-size: 13px !important;
+  }
+  
+  .project-detail-content li {
+    font-size: 13px !important;
+  }
+  
+  .project-detail-content span {
+    font-size: 13px !important;
+  }
+  
+  .project-detail-content div {
+    font-size: 13px !important;
+  }
+  
+  /* Button and link text */
+  .button {
+    font-size: 13px !important;
+  }
+  
+  .text-link {
+    font-size: 13px !important;
+  }
+  
+  .contact-new-button {
+    font-size: 13px !important;
+  }
+  
+  /* Footer text */
+  .site-footer p {
+    font-size: 12px !important;
+  }
+  
+  /* Navigation text */
+  .nav .nav-links a[data-nav] {
+    font-size: 13px !important;
+  }
+  
+  /* Hero section text */
+  .hero-sub {
+    font-size: 14px !important;
+  }
+  
+  .hero-copy .eyebrow {
+    font-size: 10px !important;
+  }
+  
+  /* About section text */
+  .about-card p {
+    font-size: 13px !important;
+  }
+  
+  /* Project tags */
+  .project-tags li {
+    font-size: 11px !important;
+  }
+  
+  .project-year {
+    font-size: 11px !important;
+  }
+  
+  /* Badge text */
+  .badge {
+    font-size: 11px !important;
+  }
+  
+  /* Mobile-specific image handling */
+  .project-media img {
+    border-radius: 12px;
+  }
+  
+  .design-img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Mobile navigation improvements */
+  .nav .nav-links a[data-nav]:hover::before,
+  .nav .nav-links a[data-nav].active::before {
+    width: 40%;
+  }
+}
+
 @media (min-width: 720px) {
   .projects { grid-template-columns: 1fr 1fr; }
 }
