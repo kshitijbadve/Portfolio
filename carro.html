@@ -59,6 +59,19 @@
         max-width: none;
         margin-left: -10%;
       }
+       /* Heuristic table tweaks */
+       .heuristic-analysis .analysis-table {
+         width: 100% !important;
+         max-width: 1000px;
+         margin: 0 auto;
+       }
+       /* Set column widths so Evaluation appears centered on the page */
+       .heuristic-analysis .analysis-table th:nth-child(1),
+       .heuristic-analysis .analysis-table td:nth-child(1) { width: 30%; vertical-align: middle; }
+       .heuristic-analysis .analysis-table th:nth-child(2),
+       .heuristic-analysis .analysis-table td:nth-child(2) { width: 40%; text-align: center; vertical-align: middle; }
+       .heuristic-analysis .analysis-table th:nth-child(3),
+       .heuristic-analysis .analysis-table td:nth-child(3) { width: 30%; vertical-align: middle; }
     </style>
   </head>
   <body>
@@ -339,6 +352,47 @@
               <h3 class="high-fidelity-heading">High Fidelity Designs</h3>
               <div class="high-fidelity-image">
                 <img src="./assets/Frame 33 (2).png" alt="High Fidelity Designs" class="high-fidelity-img" />
+              </div>
+              <h2 class="empathize-heading" style="margin-top: 48px !important;">Test</h2>
+              <h3 class="high-fidelity-heading">Usability Testing</h3>
+
+              <div class="heuristic-analysis" style="margin-top: 24px;">
+                <table class="analysis-table" style="width: auto; margin: 0 auto;">
+                  <thead>
+                    <tr>
+                      <th>Criteria</th>
+                      <th>Evaluation</th>
+                      <th>Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="analysis-cell">Consistency and Standards</td>
+                      <td class="analysis-cell">There is uniform colors, typography, and navigation patterns across car types</td>
+                      <td class="analysis-cell">Maintain category label placement consistency</td>
+                    </tr>
+                    <tr>
+                      <td class="analysis-cell">Minimalist Design</td>
+                      <td class="analysis-cell">Clean whitespace enhances the browsing experience</td>
+                      <td class="analysis-cell">Continue prioritizing images and maintain reduced text clutter in car cards</td>
+                    </tr>
+                    <tr>
+                      <td class="analysis-cell">Flexibility and Efficiency of Use</td>
+                      <td class="analysis-cell">Navigation is intuitive but users must move step by step through categories</td>
+                      <td class="analysis-cell">Add “Recently Viewed” or “Recommended Cars” to improve efficiency</td>
+                    </tr>
+                    <tr>
+                      <td class="analysis-cell">Help and Support</td>
+                      <td class="analysis-cell">No onboarding to guide new users</td>
+                      <td class="analysis-cell">Introduce a short walkthrough for news users</td>
+                    </tr>
+                    <tr>
+                      <td class="analysis-cell">Flexibility and Efficiency of Use</td>
+                      <td class="analysis-cell">There is a lack of search for a specific car</td>
+                      <td class="analysis-cell">Add search for cars</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>

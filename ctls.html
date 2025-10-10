@@ -52,6 +52,14 @@
       .project-process {
         margin-top: 40px !important;
       }
+      
+      /* Ensure strong tags work in CTLS */
+      .empathize-text strong {
+        font-weight: 500 !important;
+      }
+      .insights-list strong {
+        font-weight: 500 !important;
+      }
       .overview-text {
         color: #4a5568 !important;
         font-weight: 200 !important;
@@ -472,8 +480,8 @@
             </ul>
             <div class="insights-chart">
               <h4 class="insights-heading">Key Insights</h4>
-              <div class="insights-grid">
-                <div class="insights-section">
+              <div class="insights-grid" style="display: flex; justify-content: center;">
+                <div class="insights-section" style="text-align: center;">
                   <h5 class="insights-title">Insights</h5>
                   <ol class="insights-list">
                     <li>Too many steps to find assignments</li>
@@ -592,6 +600,22 @@
             
             <div class="high-fidelity-image" style="margin-top: 32px !important;">
               <img src="./assets/Frame 33 (1).png" alt="CTLS High Fidelity Design" class="high-fidelity-img" loading="eager" fetchpriority="high" />
+            </div>
+            
+            <h2 class="empathize-heading" style="margin-top: 48px !important;">Test</h2>
+            <p class="empathize-text">After building a high-fidelity prototype, I wanted to validate whether the redesigned navigation made CTLS easier to use and more intuitive for students.</p>
+            <p class="empathize-text" style="margin-top: -32px !important;">I conducted <strong>usability sessions</strong> with current high school students using my interactive Figma prototype. Each participant completed key tasks such as finding assignments, checking grades, and switching between classes. I recorded their task completion times, observed navigation behaviors, and recorded their feedback</p>
+            
+            <div class="insights-chart" style="margin-top: 32px !important;">
+              <h4 class="insights-heading">Performance Improvements</h4>
+              <div class="insights-grid" style="display: flex; justify-content: center;">
+                <div class="insights-section" style="text-align: center; max-width: 640px; width: 100%;">
+                  <ol class="insights-list">
+                    <li><strong>60%</strong> faster average navigation between pages</li>
+                    <li>Task completion improved from 80% before to <strong>100%</strong> after</li>
+                  </ol>
+                </div>
+              </div>
             </div>
           </div>
         </div>
