@@ -190,6 +190,18 @@ body {
 .project-media img { width: 100%; height: 100%; object-fit: cover; display: block; transform: translateZ(0); }
 .project-body { display: grid; gap: 6px; }
 .project-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+
+.project-arrow {
+  color: var(--muted);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.project-card:hover .project-arrow {
+  color: var(--text);
+  transform: translateX(2px);
+}
 .project-title { margin: 0; font-size: 18px; font-weight: 600; }
 .projects .project:first-child .project-title {
   font-size: 24px;
