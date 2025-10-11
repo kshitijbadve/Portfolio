@@ -1998,6 +1998,8 @@ body {
     overflow-x: hidden !important;
     overflow-y: auto !important;
     max-width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh !important;
   }
   
   /* Ensure all containers fit within viewport */
@@ -2019,6 +2021,18 @@ body {
   html, body {
     touch-action: pan-y !important;
     -webkit-overflow-scrolling: touch !important;
+  }
+  
+  /* Fix sticky header for mobile */
+  .site-header {
+    position: relative !important;
+    backdrop-filter: none !important;
+  }
+  
+  /* Ensure document can scroll properly */
+  #work, #contact, .projects, .project-card {
+    position: relative !important;
+    transform: none !important;
   }
   
   /* Specific fixes for common overflow culprits */
@@ -2235,6 +2249,8 @@ body {
     overflow-x: hidden !important;
     overflow-y: auto !important;
     max-width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh !important;
   }
   
   .container {
@@ -2254,6 +2270,12 @@ body {
   html, body {
     touch-action: pan-y !important;
     -webkit-overflow-scrolling: touch !important;
+  }
+  
+  /* Fix sticky header for mobile */
+  .site-header {
+    position: relative !important;
+    backdrop-filter: none !important;
   }
   
   /* Hero section optimization */
@@ -2399,6 +2421,8 @@ body {
     overflow-x: hidden !important;
     overflow-y: auto !important;
     max-width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh !important;
   }
   
   .container {
@@ -2654,6 +2678,8 @@ body {
     overflow-x: hidden !important;
     overflow-y: auto !important;
     max-width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh !important;
   }
   
   .container {
@@ -2926,6 +2952,8 @@ body {
     overflow-x: hidden !important;
     overflow-y: auto !important;
     max-width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh !important;
   }
   
   .container {
@@ -3177,6 +3205,8 @@ body {
     overflow-x: hidden !important;
     overflow-y: auto !important;
     max-width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh !important;
   }
   
   .container {
