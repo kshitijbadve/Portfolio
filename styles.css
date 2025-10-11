@@ -1066,9 +1066,23 @@ body {
   }
   
   /* Ensure all elements fit within viewport */
-  .carro-project * {
+  .carro-project img, 
+  .carro-project video, 
+  .carro-project iframe, 
+  .carro-project embed, 
+  .carro-project object, 
+  .carro-project table, 
+  .carro-project pre, 
+  .carro-project code {
     max-width: 100% !important;
     box-sizing: border-box !important;
+  }
+  
+  /* Ensure proper touch scrolling for carro project */
+  .carro-project html, 
+  .carro-project body {
+    touch-action: pan-y !important;
+    -webkit-overflow-scrolling: touch !important;
   }
   
   /* Prevent specific elements from causing overflow */
@@ -1995,10 +2009,16 @@ body {
     box-sizing: border-box !important;
   }
   
-  /* Prevent any element from exceeding viewport width */
-  * {
+  /* Prevent specific elements from exceeding viewport width */
+  img, video, iframe, embed, object, table, pre, code {
     max-width: 100% !important;
     box-sizing: border-box !important;
+  }
+  
+  /* Ensure proper touch scrolling */
+  html, body {
+    touch-action: pan-y !important;
+    -webkit-overflow-scrolling: touch !important;
   }
   
   /* Specific fixes for common overflow culprits */
@@ -2224,10 +2244,16 @@ body {
     box-sizing: border-box !important;
   }
   
-  /* Ensure all elements fit within viewport */
-  * {
+  /* Ensure specific elements fit within viewport */
+  img, video, iframe, embed, object, table, pre, code {
     max-width: 100% !important;
     box-sizing: border-box !important;
+  }
+  
+  /* Ensure proper touch scrolling */
+  html, body {
+    touch-action: pan-y !important;
+    -webkit-overflow-scrolling: touch !important;
   }
   
   /* Hero section optimization */
@@ -2299,7 +2325,6 @@ body {
     max-width: 100% !important;
     width: 100% !important;
     height: auto !important;
-    transform: translateY(-15px) !important;
   }
   
   .project-title {
@@ -2455,7 +2480,6 @@ body {
     max-width: 100% !important;
     width: 100% !important;
     height: auto !important;
-    transform: translateY(-15px) !important;
   }
   
   .project-title {
@@ -2711,7 +2735,6 @@ body {
     max-width: 100% !important;
     width: 100% !important;
     height: auto !important;
-    transform: translateY(-15px) !important;
   }
   
   .project-title {
