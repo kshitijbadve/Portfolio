@@ -98,4 +98,58 @@ var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   parallax();
 })();
 
+// Carro project video autoplay and loop handling
+(function(){
+  // Check if we're on the carro project page
+  if (!document.body.classList.contains('carro-project')) return;
+  
+  var video = document.querySelector('.project-video-player');
+  if (!video) return;
+  
+  // Ensure video attributes are set correctly
+  video.setAttribute('autoplay', '');
+  video.setAttribute('loop', '');
+  video.setAttribute('muted', '');
+  video.setAttribute('playsinline', '');
+  
+  // Force play on load and ensure it loops
+  function ensureVideoBehavior() {
+    if (video.paused) {
+      video.play().catch(function(error) {
+        console.log('Video autoplay prevented by browser:', error);
+        // If autoplay fails, try again after user interaction
+        document.addEventListener('click', function() {
+          video.play();
+        }, { once: true });
+      });
+    }
+  }
+  
+  // Ensure video behavior on load
+  if (video.readyState >= 2) {
+    ensureVideoBehavior();
+  } else {
+    video.addEventListener('loadeddata', ensureVideoBehavior);
+  }
+  
+  // Handle video end to ensure it loops
+  video.addEventListener('ended', function() {
+    video.currentTime = 0;
+    video.play();
+  });
+  
+  // Ensure video plays when it comes into view (for mobile)
+  var videoObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && video.paused) {
+        video.play().catch(function(error) {
+          console.log('Video play prevented:', error);
+        });
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  videoObserver.observe(video);
+})();
+
 

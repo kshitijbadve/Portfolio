@@ -559,20 +559,20 @@ body {
   
   /* Ideate section header size reduction for mobile */
   .target-audience-heading {
-    font-size: 16px !important;
+    font-size: 20px !important;
   }
   
   .audience-title {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
   
   /* Design Goals section header size reduction for mobile */
   .design-goals-heading {
-    font-size: 16px !important;
+    font-size: 20px !important;
   }
   
   .goal-title {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
   
   /* Prototype process flow mobile - make it fit in one line */
@@ -1104,12 +1104,12 @@ body {
     height: auto !important;
   }
   
-  /* Force text wrapping */
+  /* Prevent word breaking - move whole words to next line */
   .carro-project h1, .carro-project h2, .carro-project h3, .carro-project h4, .carro-project h5, .carro-project h6,
   .carro-project p, .carro-project span, .carro-project div, .carro-project li, .carro-project td, .carro-project th {
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    hyphens: auto !important;
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
   }
   
   /* Allow project detail content to flow naturally */
@@ -1152,9 +1152,9 @@ body {
   .carro-project .overview-text {
     font-size: 13px !important;
     line-height: 1.4 !important;
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    hyphens: auto !important;
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
   }
   
   .carro-project .project-video {
@@ -1303,19 +1303,19 @@ body {
   }
   
   .carro-project .target-audience-heading {
-    font-size: 14px !important;
+    font-size: 20px !important;
   }
   
   .carro-project .audience-title {
-    font-size: 12px !important;
+    font-size: 16px !important;
   }
   
   .carro-project .design-goals-heading {
-    font-size: 14px !important;
+    font-size: 20px !important;
   }
   
   .carro-project .goal-title {
-    font-size: 12px !important;
+    font-size: 16px !important;
   }
   
   .carro-project .prototype-process {
@@ -1338,8 +1338,8 @@ body {
   .carro-project li,
   .carro-project td,
   .carro-project th {
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
     hyphens: none !important;
     white-space: normal !important;
     word-break: keep-all !important;
@@ -1574,9 +1574,9 @@ body {
     vertical-align: middle !important;
     text-align: center !important;
     border-bottom: 1px solid #f1f5f9 !important;
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    word-break: break-word !important;
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
     white-space: normal !important;
     min-height: 35px !important;
   }
@@ -1680,9 +1680,9 @@ body {
     vertical-align: middle !important;
     text-align: center !important;
     border-bottom: 1px solid #f1f5f9 !important;
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    word-break: break-word !important;
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
     white-space: normal !important;
     min-height: 35px !important;
   }
@@ -1767,9 +1767,9 @@ body {
     flex-shrink: 1 !important;
     text-align: center !important;
     padding: 4px 6px !important;
-    background: #f8fafc !important;
+    background: transparent !important;
     border-radius: 6px !important;
-    border: 1px solid #e2e8f0 !important;
+    border: none !important;
   }
   
   .carro-project .prototype-process .process-arrow {
@@ -1865,7 +1865,12 @@ body {
   .carro-project .personas-heading,
   .carro-project .questions-heading,
   .carro-project .insights-heading,
-  .carro-project .problem-heading,
+  .carro-project .problem-heading {
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+    text-align: center !important;
+  }
+  
   .carro-project .target-audience-heading,
   .carro-project .design-goals-heading,
   .carro-project .user-flow-heading,
@@ -3756,6 +3761,7 @@ body {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 20px 40px rgba(16,24,40,0.12);
+  margin-bottom: 60px;
 }
 .project-overview {
   margin: 60px 0 40px;
@@ -3884,6 +3890,7 @@ body {
 }
 .empathize-content {
   text-align: center;
+  margin-top: 24px;
 }
 .empathize-text {
   font-family: "Jura", sans-serif;
@@ -4025,14 +4032,14 @@ body {
 }
 .persona-name {
   font-family: "Jura", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--text);
   margin-bottom: 4px;
 }
 .persona-role {
   font-family: "Jura", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #4a5568;
 }
 .interview-questions {
@@ -4113,7 +4120,7 @@ body {
   font-family: "Jura", sans-serif;
   font-size: 28px;
   font-weight: 500;
-  margin: 0 0 20px;
+  margin: 0 0 32px;
   color: var(--text);
   position: relative;
   text-align: center;
@@ -4131,6 +4138,7 @@ body {
 }
 .define-content {
   text-align: center;
+  margin-top: 24px;
 }
 .define-text {
   font-family: "Jura", sans-serif;
@@ -4284,14 +4292,14 @@ body {
 }
 .audience-title {
   font-family: "Jura", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #68C5D7;
   margin: 0 0 8px;
 }
 .audience-desc {
   font-family: "Jura", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   color: #4a5568;
   margin: 0;
@@ -4320,14 +4328,14 @@ body {
 }
 .goal-title {
   font-family: "Jura", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #68C5D7;
   margin: 0 0 8px;
 }
 .goal-desc {
   font-family: "Jura", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   color: #4a5568;
   margin: 0;
@@ -4342,7 +4350,7 @@ body {
   font-family: "Jura", sans-serif;
   font-size: 28px;
   font-weight: 500;
-  margin: 0 0 20px;
+  margin: 0 0 40px;
   color: var(--text);
   position: relative;
   text-align: center;
@@ -4365,22 +4373,98 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   max-width: 1000px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 .prototype-process .process-step {
   font-family: "Jura", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px !important;
+  font-weight: 300;
   color: var(--text);
 }
 .prototype-process .process-arrow {
   font-family: "Jura", sans-serif;
-  font-size: 20px;
+  font-size: 20px !important;
   font-weight: 600;
   color: var(--text);
+}
+
+/* Override carro project specific rules for desktop */
+@media (min-width: 1024px) {
+  .carro-project .prototype-process .process-step {
+    font-size: 18px !important;
+  }
+  
+  .carro-project .prototype-process .process-arrow {
+    font-size: 20px !important;
+  }
+}
+
+/* Ensure all section headings match Overview size on desktop */
+@media (min-width: 1024px) {
+  .overview-heading,
+  .process-heading,
+  .empathize-heading,
+  .define-heading,
+  .ideate-heading,
+  .prototype-heading {
+    font-size: 28px !important;
+  }
+  
+  /* Override carro project specific heading rules */
+  .carro-project .overview-heading,
+  .carro-project .process-heading,
+  .carro-project .empathize-heading,
+  .carro-project .define-heading,
+  .carro-project .ideate-heading,
+  .carro-project .prototype-heading {
+    font-size: 28px !important;
+  }
+}
+
+/* Force Problem heading to be larger */
+.carro-project .problem-heading {
+  font-size: 20px !important;
+}
+
+/* Ensure empathize-text matches define-text size */
+.empathize-text {
+  font-size: 16px !important;
+}
+
+/* Force empathize-text to match define-text with higher specificity */
+.carro-project .empathize-text {
+  font-size: 16px !important;
+}
+
+/* Ensure overview-text matches other sections */
+.overview-text {
+  font-size: 16px !important;
+}
+
+.carro-project .overview-text {
+  font-size: 16px !important;
+}
+
+/* Force video player margin for carro project */
+.carro-project .project-video-player {
+  margin-bottom: 60px !important;
+}
+
+/* Force persona content to be larger in carro project */
+.carro-project .persona-name {
+  font-size: 15px !important;
+}
+
+.carro-project .persona-role {
+  font-size: 13px !important;
+}
+
+/* Match persona category headers to insights headers */
+.carro-project .persona-category {
+  font-size: 16px !important;
 }
 .user-flow-heading {
   font-family: "Jura", sans-serif;
