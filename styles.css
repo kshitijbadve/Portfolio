@@ -1043,17 +1043,14 @@ body {
 
 /* Carro project responsive for 390px-430px range */
 @media (min-width: 390px) and (max-width: 430px) {
-  /* Prevent horizontal scrolling for carro project */
+  /* Allow horizontal scrolling for carro project */
   .carro-project html,
   .carro-project body {
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
     max-width: 100vw !important;
   }
   
-  /* Force all carro project elements to stay within viewport */
+  /* Allow carro project elements to flow naturally */
   .carro-project {
-    overflow-x: hidden !important;
     max-width: 100vw !important;
   }
   
@@ -1066,23 +1063,9 @@ body {
   }
   
   /* Ensure all elements fit within viewport */
-  .carro-project img, 
-  .carro-project video, 
-  .carro-project iframe, 
-  .carro-project embed, 
-  .carro-project object, 
-  .carro-project table, 
-  .carro-project pre, 
-  .carro-project code {
+  .carro-project * {
     max-width: 100% !important;
     box-sizing: border-box !important;
-  }
-  
-  /* Ensure proper touch scrolling for carro project */
-  .carro-project html, 
-  .carro-project body {
-    touch-action: pan-y !important;
-    -webkit-overflow-scrolling: touch !important;
   }
   
   /* Prevent specific elements from causing overflow */
@@ -1129,10 +1112,9 @@ body {
     hyphens: auto !important;
   }
   
-  /* Ensure project detail content doesn't overflow */
+  /* Allow project detail content to flow naturally */
   .carro-project .project-detail-content {
     max-width: 100% !important;
-    overflow-x: hidden !important;
   }
   
   /* Force all containers to respect viewport width */
@@ -1144,7 +1126,6 @@ body {
   .carro-project .project-ideate,
   .carro-project .project-prototype {
     max-width: 100% !important;
-    overflow-x: hidden !important;
   }
   
   .carro-project .logo {
@@ -1200,6 +1181,9 @@ body {
     font-size: 8px !important;
     line-height: 1.2 !important;
     min-height: 35px !important;
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
   }
   
   .carro-project .competitor-analysis .analysis-table th,
@@ -1207,6 +1191,9 @@ body {
     padding: 2px 1px !important;
     font-size: 7px !important;
     min-height: 30px !important;
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
   }
   
   .carro-project .heuristic-analysis .analysis-table th,
@@ -1214,10 +1201,9 @@ body {
     padding: 2px 1px !important;
     font-size: 7px !important;
     min-height: 30px !important;
-    word-break: keep-all !important;
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
     white-space: normal !important;
-    overflow-wrap: break-word !important;
-    hyphens: none !important;
   }
   
   /* Carro images for 390-430px range - override all other rules */
@@ -1993,13 +1979,9 @@ body {
 
 /* Global horizontal scroll prevention for 390px-430px range */
 @media (min-width: 390px) and (max-width: 430px) {
-  /* Prevent horizontal scrolling on all pages */
+  /* Allow horizontal scrolling on all pages */
   html, body {
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
     max-width: 100vw !important;
-    height: auto !important;
-    min-height: 100vh !important;
   }
   
   /* Ensure all containers fit within viewport */
@@ -2011,28 +1993,10 @@ body {
     box-sizing: border-box !important;
   }
   
-  /* Prevent specific elements from exceeding viewport width */
-  img, video, iframe, embed, object, table, pre, code {
+  /* Prevent any element from exceeding viewport width */
+  * {
     max-width: 100% !important;
     box-sizing: border-box !important;
-  }
-  
-  /* Ensure proper touch scrolling */
-  html, body {
-    touch-action: pan-y !important;
-    -webkit-overflow-scrolling: touch !important;
-  }
-  
-  /* Fix sticky header for mobile */
-  .site-header {
-    position: relative !important;
-    backdrop-filter: none !important;
-  }
-  
-  /* Ensure document can scroll properly */
-  #work, #contact, .projects, .project-card {
-    position: relative !important;
-    transform: none !important;
   }
   
   /* Specific fixes for common overflow culprits */
@@ -2244,13 +2208,9 @@ body {
 
 /* 390px-430px: Small mobile phones */
 @media (min-width: 390px) and (max-width: 430px) {
-  /* Prevent horizontal scrolling */
+  /* Allow horizontal scrolling */
   html, body {
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
     max-width: 100vw !important;
-    height: auto !important;
-    min-height: 100vh !important;
   }
   
   .container {
@@ -2260,22 +2220,10 @@ body {
     box-sizing: border-box !important;
   }
   
-  /* Ensure specific elements fit within viewport */
-  img, video, iframe, embed, object, table, pre, code {
+  /* Ensure all elements fit within viewport */
+  * {
     max-width: 100% !important;
     box-sizing: border-box !important;
-  }
-  
-  /* Ensure proper touch scrolling */
-  html, body {
-    touch-action: pan-y !important;
-    -webkit-overflow-scrolling: touch !important;
-  }
-  
-  /* Fix sticky header for mobile */
-  .site-header {
-    position: relative !important;
-    backdrop-filter: none !important;
   }
   
   /* Hero section optimization */
@@ -2347,6 +2295,7 @@ body {
     max-width: 100% !important;
     width: 100% !important;
     height: auto !important;
+    transform: translateY(-15px) !important;
   }
   
   .project-title {
@@ -2419,10 +2368,7 @@ body {
   /* Prevent horizontal scrolling */
   html, body {
     overflow-x: hidden !important;
-    overflow-y: auto !important;
     max-width: 100vw !important;
-    height: auto !important;
-    min-height: 100vh !important;
   }
   
   .container {
@@ -2504,6 +2450,7 @@ body {
     max-width: 100% !important;
     width: 100% !important;
     height: auto !important;
+    transform: translateY(-15px) !important;
   }
   
   .project-title {
@@ -2676,10 +2623,7 @@ body {
   /* Prevent horizontal scrolling */
   html, body {
     overflow-x: hidden !important;
-    overflow-y: auto !important;
     max-width: 100vw !important;
-    height: auto !important;
-    min-height: 100vh !important;
   }
   
   .container {
@@ -2761,6 +2705,7 @@ body {
     max-width: 100% !important;
     width: 100% !important;
     height: auto !important;
+    transform: translateY(-15px) !important;
   }
   
   .project-title {
@@ -2950,10 +2895,7 @@ body {
   /* Prevent horizontal scrolling */
   html, body {
     overflow-x: hidden !important;
-    overflow-y: auto !important;
     max-width: 100vw !important;
-    height: auto !important;
-    min-height: 100vh !important;
   }
   
   .container {
@@ -3203,10 +3145,7 @@ body {
   /* Prevent horizontal scrolling */
   html, body {
     overflow-x: hidden !important;
-    overflow-y: auto !important;
     max-width: 100vw !important;
-    height: auto !important;
-    min-height: 100vh !important;
   }
   
   .container {
