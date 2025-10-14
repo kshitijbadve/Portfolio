@@ -2380,6 +2380,15 @@ body {
     white-space: normal !important;
   }
   
+  /* Live Sports video corner radius for 390-430px */
+  .live-sports-project .phone-screen {
+    border-radius: 30px !important;
+  }
+  
+  .live-sports-project .phone-video {
+    border-radius: 30px !important;
+  }
+  
   /* CTLS Research Cards - Mobile Layout */
   .research-cards {
     display: flex !important;
