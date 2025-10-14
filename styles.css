@@ -2372,6 +2372,14 @@ body {
   
   /* CTLS-specific responsive fixes for 390-430px breakpoint */
   
+  /* CTLS Text wrapping for 390-430px */
+  .ctls-project * {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+  }
+  
   /* CTLS Research Cards - Mobile Layout */
   .research-cards {
     display: flex !important;
@@ -2385,6 +2393,9 @@ body {
     padding: 16px 20px !important;
     min-height: auto !important;
     text-align: center !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
   }
   
   /* CTLS Problem Pills - Mobile Layout */
@@ -2400,6 +2411,9 @@ body {
     padding: 16px 20px !important;
     min-height: auto !important;
     text-align: center !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
   }
   
   /* CTLS Ideate Pills - Mobile Layout */
@@ -2415,6 +2429,9 @@ body {
     padding: 16px 20px !important;
     min-height: auto !important;
     text-align: center !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
   }
   
   /* CTLS Insights Grid - Mobile Layout */
@@ -5746,6 +5763,11 @@ img[src*="edmundslogo.png"] {
   .contact-page .contact-label-item,
   .contact-page .contact-value {
     text-align: left !important;
+  }
+  
+  /* Increase CTLS header size for 430-720px range */
+  .ctls-project .project-detail-title {
+    font-size: 48px !important;
   }
   
   /* Prevent horizontal overflow */

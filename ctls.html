@@ -40,7 +40,44 @@
       
       /* Move overview section down in CTLS */
       .project-overview {
-        margin-top: 100px !important;
+        margin-top: 40px !important;
+      }
+      
+      /* Reduce spacing between heading and video in CTLS */
+      .project-detail-title {
+        margin-bottom: 16px !important;
+      }
+      
+      .project-detail-desc {
+        margin-bottom: 16px !important;
+      }
+      
+      /* Increase CTLS header size for 430-720px range */
+      @media (min-width: 430px) and (max-width: 720px) {
+        .project-detail-title {
+          font-size: 36px !important;
+        }
+      }
+      
+      /* Increase top and bottom spacing of CTLS video on desktop */
+      @media (min-width: 1024px) {
+        .project-video {
+          margin-top: 60px !important;
+          margin-bottom: 60px !important;
+        }
+        
+        .project-video-player {
+          margin-top: 60px !important;
+          margin-bottom: 60px !important;
+        }
+        
+        /* Increase wireframes image size on desktop */
+        .wireframes-img {
+          width: 120% !important;
+          max-width: none !important;
+          transform: scale(1.1) !important;
+          margin-left: 0% !important;
+        }
       }
       
       /* Reduce space above Ideate section in CTLS */
