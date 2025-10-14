@@ -641,7 +641,7 @@ body {
     padding: 2px 1px !important;
     width: 25% !important;
     max-width: 25% !important;
-    text-align: left !important;
+    text-align: center !important;
     vertical-align: top !important;
     border: 1px solid #e2e8f0 !important;
     font-size: 7px !important;
@@ -762,7 +762,7 @@ body {
   .insights-section {
     width: 100% !important;
     max-width: 100% !important;
-    text-align: left !important;
+    text-align: center !important;
     padding: 16px !important;
     background: white !important;
     border-radius: 8px !important;
@@ -776,7 +776,7 @@ body {
   }
   
   .insights-section[style*="text-align: center"] {
-    text-align: left !important;
+    text-align: center !important;
   }
   
   .insights-section[style*="max-width: 640px"] {
@@ -803,7 +803,7 @@ body {
     border: none !important;
     border-radius: 0 !important;
     background: transparent !important;
-    text-align: left !important;
+    text-align: center !important;
     width: 100% !important;
     word-wrap: break-word !important;
     overflow-wrap: break-word !important;
@@ -831,7 +831,7 @@ body {
   }
   
   div[style*="text-align: center"] .insights-section {
-    text-align: left !important;
+    text-align: center !important;
   }
   
   div[style*="max-width: 640px"] .insights-section {
@@ -924,7 +924,7 @@ body {
   }
   
   .edmunds-logo {
-    height: 40px !important;
+    height: 60px !important;
     width: auto !important;
     display: block !important;
     margin: 0 auto !important;
@@ -1136,9 +1136,6 @@ body {
     padding: 16px 0 32px !important;
   }
   
-  .carro-project .project-header {
-    margin-bottom: 16px !important;
-  }
   
   .carro-project .project-detail-title {
     font-size: clamp(28px, 7vw, 36px) !important;
@@ -1157,9 +1154,6 @@ body {
     hyphens: none !important;
   }
   
-  .carro-project .project-video {
-    margin-bottom: 16px !important;
-  }
   
   .carro-project .project-video video {
     width: 100% !important;
@@ -1601,7 +1595,7 @@ body {
   }
   
   .carro-project .edmunds-logo {
-    max-height: 20px !important;
+    max-height: 30px !important;
   }
   
   .carro-project .carvana-logo {
@@ -2241,7 +2235,7 @@ body {
     line-height: 1.8 !important;
     margin-bottom: 16px !important;
     margin-left: 20px !important;
-    text-align: left !important;
+    text-align: center !important;
     word-wrap: break-word !important;
     overflow-wrap: break-word !important;
     hyphens: none !important;
@@ -2257,7 +2251,7 @@ body {
   }
   
   .hero-copy .eyebrow {
-    text-align: left !important;
+    text-align: center !important;
     display: block !important;
     margin-left: 20px !important;
   }
@@ -2366,6 +2360,603 @@ body {
     width: auto !important;
   }
   
+  /* Contact page - move content down for 390-430px */
+  .contact-page {
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+  }
+  
+  .contact-page-content {
+    margin-top: 10px !important;
+  }
+  
+  /* CTLS-specific responsive fixes for 390-430px breakpoint */
+  
+  /* CTLS Research Cards - Mobile Layout */
+  .research-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    grid-template-columns: none !important;
+  }
+  
+  .research-card {
+    width: 100% !important;
+    padding: 16px 20px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  
+  /* CTLS Problem Pills - Mobile Layout */
+  .problem-pills {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    grid-template-columns: none !important;
+  }
+  
+  .problem-pill {
+    width: 100% !important;
+    padding: 16px 20px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  
+  /* CTLS Ideate Pills - Mobile Layout */
+  .ideate-pills {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    grid-template-columns: none !important;
+  }
+  
+  .ideate-pill {
+    width: 100% !important;
+    padding: 16px 20px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  
+  /* CTLS Insights Grid - Mobile Layout */
+  .insights-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    grid-template-columns: none !important;
+  }
+  
+  .insights-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 16px 12px !important;
+    margin: 0 !important;
+    border-radius: 12px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+  
+  .insights-title {
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+    white-space: normal !important;
+    font-weight: 500 !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+  }
+  
+  .insights-list {
+    display: block !important;
+    gap: 0 !important;
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  
+  .insights-list li {
+    padding: 3px 0 !important;
+    margin-bottom: 4px !important;
+    border: none !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    text-align: center !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    list-style-position: inside !important;
+  }
+  
+  /* CTLS Image containers - Match desktop layout */
+  .user-flow-image {
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: center !important;
+  }
+  
+  .wireframes-image {
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: center !important;
+  }
+  
+  /* CTLS Flow image - Match desktop proportions but scaled for mobile */
+  .flow-image {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    max-width: none !important;
+    margin-left: 0% !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Decrease MK Group Construction mk_old.avif image size for mobile */
+  .project-image--small img[src*="mk_old.avif"] {
+    width: 40% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  
+  /* CTLS User flow heading - Match desktop styling */
+  .user-flow-heading {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    margin: 32px 0 16px !important;
+    color: #0f172a !important;
+  }
+  
+  /* CTLS High fidelity images grid */
+  .high-fidelity-images {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  .high-fidelity-image {
+    padding: 0 !important;
+  }
+  
+  /* CTLS Prototype process adjustments - Match desktop horizontal flow */
+  .prototype-process {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    text-align: center !important;
+    flex-wrap: wrap !important;
+  }
+  
+  .process-step {
+    font-size: 12px !important;
+    padding: 3px 8px !important;
+    white-space: nowrap !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    color: #0f172a !important;
+    font-weight: 300 !important;
+  }
+  
+  .process-arrow {
+    display: inline !important;
+    font-size: 12px !important;
+    color: #000000 !important;
+    font-weight: 600 !important;
+    margin: 0 2px !important;
+  }
+  
+  /* Higher specificity overrides for prototype process */
+  .project-prototype .prototype-process .process-step,
+  .project-detail .prototype-process .process-step,
+  .project-detail-content .prototype-process .process-step {
+    font-size: 12px !important;
+    padding: 3px 8px !important;
+    white-space: nowrap !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    color: #0f172a !important;
+    font-weight: 300 !important;
+  }
+  
+  .project-prototype .prototype-process .process-arrow,
+  .project-detail .prototype-process .process-arrow,
+  .project-detail-content .prototype-process .process-arrow {
+    display: inline !important;
+    font-size: 12px !important;
+    color: #000000 !important;
+    font-weight: 600 !important;
+    margin: 0 2px !important;
+  }
+  
+  /* Override any existing prototype process styles */
+  .prototype-process span.process-step,
+  .prototype-process span.process-arrow {
+    font-size: 12px !important;
+    padding: 3px 8px !important;
+    white-space: nowrap !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    color: #0f172a !important;
+    font-weight: 300 !important;
+  }
+  
+  .prototype-process span.process-arrow {
+    font-size: 12px !important;
+    color: #000000 !important;
+    font-weight: 600 !important;
+    margin: 0 2px !important;
+  }
+  
+  /* CTLS Video player adjustments */
+  .project-video-player {
+    max-width: 100% !important;
+    width: 100% !important;
+    transform: none !important;
+  }
+  
+  /* CTLS Text content adjustments for mobile */
+  .overview-text,
+  .empathize-text,
+  .problem-text,
+  .ideate-intro {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+  }
+  
+  /* CTLS Test section paragraph spacing */
+  .project-prototype .empathize-text {
+    margin-bottom: 52px !important;
+  }
+  
+  /* CTLS Performance Improvements heading spacing */
+  .project-prototype .insights-heading {
+    margin-bottom: 20px !important;
+  }
+  
+  /* Better spacing for content blocks */
+  .research-cards,
+  .problem-pills,
+  .ideate-pills,
+  .insights-chart {
+    margin: 20px 0 !important;
+  }
+  
+  /* Spacing for lists and content */
+  .empathize-text ul {
+    margin: 16px 0 20px !important;
+  }
+  
+  /* CTLS Main heading adjustments - Make main headings larger */
+  .overview-heading,
+  .process-heading,
+  .empathize-heading,
+  .define-heading,
+  .ideate-heading,
+  .prototype-heading {
+    font-size: 24px !important;
+    margin: 0 0 20px !important;
+    font-weight: 500 !important;
+  }
+  
+  /* Fix Carro project heading spacing - Remove excessive top margins */
+  .carro-project .define-heading,
+  .carro-project .ideate-heading {
+    margin: 0 0 16px !important;
+    font-size: 20px !important;
+  }
+  
+  /* Fix Carro project Ideate section box spacing - Remove excessive top padding */
+  .carro-project .audience-item,
+  .carro-project .goals-item {
+    padding: 12px 16px !important;
+    margin: 8px 0 !important;
+  }
+  
+  .carro-project .audience-title,
+  .carro-project .goals-title {
+    margin: 0 0 8px !important;
+    font-size: 16px !important;
+  }
+  
+  .carro-project .audience-desc,
+  .carro-project .goals-desc {
+    margin: 0 !important;
+    font-size: 14px !important;
+  }
+  
+  /* Higher specificity overrides for Carro project boxes */
+  .carro-project .project-ideate .audience-item,
+  .carro-project .project-ideate .goals-item,
+  .carro-project .ideate-content .audience-item,
+  .carro-project .ideate-content .goals-item {
+    padding: 8px 12px !important;
+    margin: 6px 0 !important;
+  }
+  
+  .carro-project .project-ideate .audience-title,
+  .carro-project .project-ideate .goals-title,
+  .carro-project .ideate-content .audience-title,
+  .carro-project .ideate-content .goals-title {
+    margin: 0 0 6px !important;
+    font-size: 14px !important;
+    padding-top: 0 !important;
+  }
+  
+  .carro-project .project-ideate .audience-desc,
+  .carro-project .project-ideate .goals-desc,
+  .carro-project .ideate-content .audience-desc,
+  .carro-project .ideate-content .goals-desc {
+    margin: 0 !important;
+    font-size: 12px !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Force override any existing box content styles */
+  .carro-project .audience-list .audience-item,
+  .carro-project .goals-list .goals-item {
+    padding: 8px 12px !important;
+    margin: 6px 0 !important;
+  }
+  
+  .carro-project .audience-list .audience-item h4,
+  .carro-project .goals-list .goals-item h4 {
+    margin: 0 0 6px !important;
+    font-size: 14px !important;
+    padding-top: 0 !important;
+  }
+  
+  .carro-project .audience-list .audience-item p,
+  .carro-project .goals-list .goals-item p {
+    margin: 0 !important;
+    font-size: 12px !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Fix Design Goals section boxes - Different class names */
+  .carro-project .goals-list .goal-item {
+    padding: 8px 12px !important;
+    margin: 6px 0 !important;
+  }
+  
+  .carro-project .goals-list .goal-item h4,
+  .carro-project .goals-list .goal-title {
+    margin: 0 0 6px !important;
+    font-size: 14px !important;
+    padding-top: 0 !important;
+  }
+  
+  .carro-project .goals-list .goal-item p,
+  .carro-project .goals-list .goal-desc {
+    margin: 0 !important;
+    font-size: 12px !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Higher specificity for Design Goals */
+  .carro-project .project-define .goals-list .goal-item,
+  .carro-project .define-content .goals-list .goal-item {
+    padding: 8px 12px !important;
+    margin: 6px 0 !important;
+  }
+  
+  .carro-project .project-define .goals-list .goal-item h4,
+  .carro-project .project-define .goals-list .goal-title,
+  .carro-project .define-content .goals-list .goal-item h4,
+  .carro-project .define-content .goals-list .goal-title {
+    margin: 0 0 6px !important;
+    font-size: 14px !important;
+    padding-top: 0 !important;
+  }
+  
+  .carro-project .project-define .goals-list .goal-item p,
+  .carro-project .project-define .goals-list .goal-desc,
+  .carro-project .define-content .goals-list .goal-item p,
+  .carro-project .define-content .goals-list .goal-desc {
+    margin: 0 !important;
+    font-size: 12px !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Fix Problem section boxes in Define - Different class names */
+  .carro-project .problem-list .problem-item {
+    padding: 8px 12px !important;
+    margin: 6px 0 !important;
+  }
+  
+  .carro-project .problem-list .problem-item h4,
+  .carro-project .problem-list .problem-title {
+    margin: 8px 0 6px !important;
+    font-size: 14px !important;
+    padding-top: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .carro-project .problem-list .problem-item p,
+  .carro-project .problem-list .problem-desc {
+    margin: 0 !important;
+    font-size: 12px !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Higher specificity for Problem section */
+  .carro-project .project-define .problem-list .problem-item,
+  .carro-project .define-content .problem-list .problem-item,
+  .carro-project .problem-section .problem-list .problem-item {
+    padding: 8px 12px !important;
+    margin: 6px 0 !important;
+  }
+  
+  .carro-project .project-define .problem-list .problem-item h4,
+  .carro-project .project-define .problem-list .problem-title,
+  .carro-project .define-content .problem-list .problem-item h4,
+  .carro-project .define-content .problem-list .problem-title,
+  .carro-project .problem-section .problem-list .problem-item h4,
+  .carro-project .problem-section .problem-list .problem-title {
+    margin: 8px 0 6px !important;
+    font-size: 14px !important;
+    padding-top: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .carro-project .project-define .problem-list .problem-item p,
+  .carro-project .project-define .problem-list .problem-desc,
+  .carro-project .define-content .problem-list .problem-item p,
+  .carro-project .define-content .problem-list .problem-desc,
+  .carro-project .problem-section .problem-list .problem-item p,
+  .carro-project .problem-section .problem-list .problem-desc {
+    margin: 0 !important;
+    font-size: 12px !important;
+    padding-top: 0 !important;
+  }
+  
+  /* CTLS Subheading adjustments - Make subheadings smaller than main headings */
+  .empathize-subheading,
+  .empathize-miniheading {
+    font-size: 18px !important;
+    margin: 24px 0 12px !important;
+    font-weight: 400 !important;
+  }
+  
+  /* Higher specificity overrides for subheadings */
+  h3.empathize-subheading,
+  h4.empathize-miniheading,
+  .project-empathize .empathize-subheading,
+  .project-empathize .empathize-miniheading,
+  .project-define .empathize-subheading,
+  .project-ideate .empathize-subheading {
+    font-size: 18px !important;
+    margin: 24px 0 12px !important;
+    font-weight: 400 !important;
+  }
+  
+  /* Override any inline styles */
+  h3[style*="font-size"],
+  h4[style*="font-size"] {
+    font-size: 18px !important;
+  }
+  
+  /* Force override for all possible heading combinations */
+  .project-detail h3.empathize-subheading,
+  .project-detail h4.empathize-miniheading,
+  .project-detail-content h3.empathize-subheading,
+  .project-detail-content h4.empathize-miniheading {
+    font-size: 18px !important;
+    margin: 24px 0 12px !important;
+    font-weight: 400 !important;
+  }
+  
+  /* Override any existing heading styles */
+  .project-empathize h3,
+  .project-define h3,
+  .project-ideate h3,
+  .project-empathize h4,
+  .project-define h4,
+  .project-ideate h4 {
+    font-size: 18px !important;
+    margin: 24px 0 12px !important;
+    font-weight: 400 !important;
+  }
+  
+  /* CTLS List adjustments */
+  .empathize-text ul {
+    padding-left: 16px !important;
+    margin: 16px 0 !important;
+  }
+  
+  .empathize-text li {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 8px !important;
+  }
+  
+  /* CTLS Section spacing - Match desktop proportions but scaled for mobile */
+  .project-overview {
+    margin: 40px 0 24px !important;
+    padding: 0 !important;
+  }
+  
+  .project-process {
+    margin: 32px 0 24px !important;
+    padding: 0 !important;
+  }
+  
+  .project-empathize,
+  .project-define,
+  .project-ideate,
+  .project-prototype {
+    margin: 48px 0 24px !important;
+    padding: 0 !important;
+  }
+  
+  /* CTLS Insights Chart Container - Mobile Fixes */
+  .insights-chart {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+  
+  .insights-chart[style*="display: flex"] {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+  }
+  
+  /* Override any inline styles that might cause overflow */
+  div[style*="display: flex"] .insights-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+  }
+  
+  div[style*="text-align: center"] .insights-section {
+    text-align: center !important;
+  }
+  
+  div[style*="max-width: 640px"] .insights-section {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  /* Force center alignment for all insights content */
+  .insights-chart[style*="text-align: center"] {
+    text-align: center !important;
+  }
+  
+  .insights-grid[style*="justify-content: center"] {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  /* Override any left alignment styles */
+  .insights-section[style*="text-align: left"] {
+    text-align: center !important;
+  }
+  
+  .insights-title[style*="text-align: left"] {
+    text-align: center !important;
+  }
+  
+  .insights-list[style*="text-align: left"] {
+    text-align: center !important;
+  }
+  
 }
 
 /* 430px-480px: Larger mobile phones */
@@ -2401,7 +2992,7 @@ body {
     word-wrap: break-word !important;
     overflow-wrap: break-word !important;
     margin-left: 20px !important;
-    text-align: left !important;
+    text-align: center !important;
   }
   
   .hero-sub {
@@ -2415,7 +3006,7 @@ body {
   
   .hero-copy .eyebrow {
     margin-left: 20px !important;
-    text-align: left !important;
+    text-align: center !important;
   }
   
   /* Navigation optimization */
@@ -2636,12 +3227,19 @@ body {
     padding: 0 20px !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
+    margin: 0 auto !important;
+    text-align: center !important;
   }
   
-  /* Ensure all elements fit within viewport */
+  /* Ensure all elements fit within viewport - but allow contact section to break out */
   * {
     max-width: 100% !important;
     box-sizing: border-box !important;
+  }
+  
+  /* Override the max-width rule for contact section */
+  .contact-new {
+    max-width: none !important;
   }
   
   /* Hero section optimization */
@@ -2656,7 +3254,7 @@ body {
     word-wrap: break-word !important;
     overflow-wrap: break-word !important;
     margin-left: 20px !important;
-    text-align: left !important;
+    text-align: center !important;
   }
   
   .hero-sub {
@@ -2670,7 +3268,7 @@ body {
   
   .hero-copy .eyebrow {
     margin-left: 20px !important;
-    text-align: left !important;
+    text-align: center !important;
   }
   
   /* Navigation optimization */
@@ -2731,26 +3329,37 @@ body {
     max-width: 100vw !important;
     margin-left: calc(-50vw + 50%) !important;
     margin-right: calc(-50vw + 50%) !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
   }
   
   .contact-new-content {
     max-width: 100% !important;
     width: 100% !important;
     padding: 0 20px !important;
+    margin: 0 !important;
+    align-items: center !important;
+    text-align: center !important;
   }
   
   .contact-new-title {
-    font-size: clamp(24px, 4vw, 32px) !important;
-    margin: 32px 0 0px 0 !important;
+    max-width: none !important;
+    margin-top: 40px !important;
+    margin-left: 0 !important;
   }
   
   .contact-new-button-container {
-    margin-top: 0px !important;
+    max-width: none !important;
+    justify-content: center !important;
+    margin-top: 20px !important;
   }
   
   .contact-new-button {
     padding: 12px 20px !important;
     font-size: 14px !important;
+    max-width: 140px !important;
+    width: auto !important;
   }
   
   /* Footer copyright text */
@@ -2897,10 +3506,10 @@ body {
 
 /* 600px-720px: Medium tablets */
 @media (min-width: 600px) and (max-width: 720px) {
-  /* Prevent horizontal scrolling */
+  /* Allow horizontal scrolling for tablets */
   html, body {
-    overflow-x: hidden !important;
-    max-width: 100vw !important;
+    overflow-x: auto !important;
+    max-width: none !important;
   }
   
   .container {
@@ -2908,6 +3517,8 @@ body {
     padding: 0 24px !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
+    margin: 0 auto !important;
+    text-align: center !important;
   }
   
   /* Ensure all elements fit within viewport */
@@ -3147,10 +3758,10 @@ body {
 
 /* 720px-850px: Large tablets and small laptops */
 @media (min-width: 720px) and (max-width: 850px) {
-  /* Prevent horizontal scrolling */
+  /* Allow horizontal scrolling for tablets */
   html, body {
-    overflow-x: hidden !important;
-    max-width: 100vw !important;
+    overflow-x: auto !important;
+    max-width: none !important;
   }
   
   .container {
@@ -3410,27 +4021,527 @@ body {
   .step-title {
     font-size: 14px !important;
   }
+  
+  /* CTLS Wireframes image centering for 720-850px range */
+  .wireframes-image {
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .wireframes-img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block !important;
+  }
 }
 
-/* Contact footer alignment for screens up to 1024px */
+/* 720px-1024px: Large tablets and small laptops - CTLS specific fixes */
+@media (min-width: 720px) and (max-width: 1024px) {
+  /* Allow horizontal scrolling for tablets */
+  html, body {
+    overflow-x: auto !important;
+    max-width: none !important;
+  }
+  
+  .container {
+    width: 90% !important;
+    padding: 0 24px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Ensure all elements fit within viewport */
+  * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* CTLS Video - Override inline styles for tablet view */
+  .project-video-player {
+    width: 90% !important;
+    max-width: 90% !important;
+    height: auto !important;
+    transform: none !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+  
+  /* Ensure video container doesn't cause overflow */
+  .project-video {
+    overflow: visible !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  /* Override CTLS inline video styles specifically for tablet */
+  body .project-video-player {
+    width: 90% !important;
+    max-width: 90% !important;
+    transform: none !important;
+  }
+  
+  /* Fix User Research section for tablet - prevent vertical stretching */
+  .project-empathize .research-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    grid-template-columns: none !important;
+  }
+  
+  .research-card {
+    width: 100% !important;
+    padding: 16px 20px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  
+  /* CTLS Problem Pills - Tablet Layout */
+  .problem-pills {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    grid-template-columns: none !important;
+  }
+  
+  .problem-pill {
+    width: 100% !important;
+    padding: 16px 20px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  
+  /* CTLS Ideate Pills - Tablet Layout */
+  .ideate-pills {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    grid-template-columns: none !important;
+  }
+  
+  .ideate-pill {
+    width: 100% !important;
+    padding: 16px 20px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  
+  /* CTLS Insights Grid - Tablet Layout */
+  .insights-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    grid-template-columns: none !important;
+  }
+  
+  .insights-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 16px 20px !important;
+    margin: 0 !important;
+  }
+  
+  /* CTLS Image containers - Center and scale appropriately */
+  .user-flow-image {
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: center !important;
+  }
+  
+  .wireframes-image {
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: center !important;
+  }
+  
+  /* CTLS Flow image - Scale for tablet */
+  .flow-image {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    max-width: none !important;
+    margin-left: 0% !important;
+    margin-right: 0 !important;
+  }
+  
+  /* CTLS Wireframes image - Scale for tablet */
+  .wireframes-img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    max-width: none !important;
+  }
+  
+  /* CTLS High fidelity images grid */
+  .high-fidelity-images {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  .high-fidelity-image {
+    padding: 0 !important;
+  }
+  
+  .high-fidelity-img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    max-width: none !important;
+  }
+  
+  /* CTLS Prototype process adjustments - Horizontal flow for tablet */
+  .prototype-process {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    text-align: center !important;
+    flex-wrap: wrap !important;
+  }
+  
+  .process-step {
+    font-size: 14px !important;
+    padding: 6px 12px !important;
+  }
+  
+  .process-arrow {
+    font-size: 16px !important;
+    color: #E55050 !important;
+    font-weight: 600 !important;
+    margin: 0 2px !important;
+  }
+  
+  /* CTLS Text content adjustments for tablet */
+  .overview-text,
+  .empathize-text,
+  .problem-text,
+  .ideate-intro {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+  }
+  
+  /* CTLS Main heading adjustments for tablet */
+  .overview-heading,
+  .process-heading,
+  .empathize-heading,
+  .define-heading,
+  .ideate-heading,
+  .prototype-heading {
+    font-size: 26px !important;
+    margin: 0 0 20px !important;
+    font-weight: 500 !important;
+  }
+  
+  /* CTLS Subheading adjustments for tablet */
+  .empathize-subheading,
+  .empathize-miniheading {
+    font-size: 20px !important;
+    margin: 24px 0 12px !important;
+    font-weight: 400 !important;
+  }
+  
+  /* CTLS Section spacing for tablet */
+  .project-overview {
+    margin: 40px 0 24px !important;
+    padding: 0 !important;
+  }
+  
+  .project-process {
+    margin: 32px 0 24px !important;
+    padding: 0 !important;
+  }
+  
+  .project-empathize {
+    margin: 32px 0 24px !important;
+    padding: 0 !important;
+  }
+  
+  .project-prototype {
+    margin: 48px 0 24px !important;
+    padding: 0 !important;
+  }
+  
+  /* CTLS Insights Chart Container - Tablet Fixes */
+  .insights-chart {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+  
+  .insights-chart[style*="display: flex"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  
+  /* Better spacing for content blocks */
+  .research-cards,
+  .problem-pills,
+  .ideate-pills,
+  .insights-chart {
+    margin: 20px 0 !important;
+  }
+  
+  /* Spacing for lists and content */
+  .empathize-text ul {
+    margin: 16px 0 20px !important;
+  }
+  
+  /* CTLS List adjustments */
+  .empathize-text ul {
+    padding-left: 16px !important;
+    margin: 16px 0 !important;
+  }
+  
+  .empathize-text li {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 8px !important;
+  }
+  
+  /* Increase section headings to match Overview size for 720-1024px */
+  .overview-heading,
+  .process-heading,
+  .empathize-heading,
+  .define-heading,
+  .ideate-heading,
+  .prototype-heading {
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    margin: 0 0 20px !important;
+  }
+  
+  /* More specific targeting for section headings */
+  h2.overview-heading,
+  h2.process-heading,
+  h2.empathize-heading,
+  h2.define-heading,
+  h2.ideate-heading,
+  h2.prototype-heading {
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    margin: 0 0 20px !important;
+  }
+  
+  /* Target all h2 elements in project sections */
+  .project-overview h2,
+  .project-process h2,
+  .project-empathize h2,
+  .project-define h2,
+  .project-ideate h2,
+  .project-prototype h2 {
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    margin: 0 0 20px !important;
+  }
+  
+  /* Specific targeting for Process heading */
+  .project-process h2.process-heading,
+  .project-process .process-heading {
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    margin: 0 0 20px !important;
+  }
+  
+  /* Apply same font size to Empathize, Define, Ideate, and Test headings */
+  .project-empathize h2.empathize-heading,
+  .project-empathize .empathize-heading,
+  .project-define h2.define-heading,
+  .project-define .define-heading,
+  .project-ideate h2.ideate-heading,
+  .project-ideate .ideate-heading,
+  .project-prototype h2.empathize-heading,
+  .project-prototype .empathize-heading {
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    margin: 0 0 20px !important;
+  }
+  
+  /* CTLS Test section paragraph spacing for 720-1024px - extra maximum spacing */
+  .project-prototype .empathize-text[style*="margin-top: -32px"] {
+    margin-top: 80px !important;
+  }
+  
+  /* Ensure proper spacing between Test section paragraphs - extra maximum */
+  .project-prototype .empathize-text {
+    margin-bottom: 50px !important;
+  }
+}
+
+/* Contact section styling for 500px-1024px - match 390-430px exactly */
+@media (min-width: 500px) and (max-width: 1024px) {
+  /* Contact section - extend to full screen width - match 390-430px exactly */
+  .contact-new {
+    padding: 32px 0 !important;
+    margin: 60px 0 0 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+  }
+  
+  .contact-new-content {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 12px !important;
+  }
+  
+  .contact-new-title {
+    font-size: clamp(24px, 4vw, 32px) !important;
+    margin: 32px 0 0px 0 !important;
+  }
+  
+  .contact-new-button-container {
+    margin-top: 0px !important;
+  }
+  
+  .contact-new-button {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    max-width: 140px !important;
+    width: auto !important;
+  }
+  
+  /* Footer copyright text */
+  .site-footer p {
+    font-size: 12px !important;
+  }
+}
+
+/* NUCLEAR OPTION for 500-600px range - force full screen width */
+@media (min-width: 500px) and (max-width: 600px) {
+  /* Completely reset and force full width */
+  .contact-new {
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+    margin: 60px 0 0 0 !important;
+    padding: 32px 0 !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    transform: translateX(0) !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+  
+  .contact-new-content {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    padding: 0 12px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+  
+  .contact-new-title {
+    font-size: clamp(24px, 4vw, 32px) !important;
+    margin: 32px 0 0px 0 !important;
+    max-width: none !important;
+    width: auto !important;
+  }
+  
+  .contact-new-button-container {
+    margin-top: 0px !important;
+    max-width: none !important;
+    width: auto !important;
+  }
+  
+  .contact-new-button {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    max-width: 140px !important;
+    width: auto !important;
+  }
+  
+  /* Force parent containers to not constrain */
+  body,
+  html,
+  .site-main,
+  .work,
+  .container {
+    overflow-x: visible !important;
+    max-width: none !important;
+  }
+  
+  /* Nuclear option - override everything */
+  .contact-new,
+  .contact-new *,
+  .contact-new-content,
+  .contact-new-content * {
+    max-width: none !important;
+    min-width: auto !important;
+  }
+}
+
+/* EXTREME OVERRIDE - Force full width for 500-600px with maximum specificity */
+@media (min-width: 500px) and (max-width: 600px) {
+  html body .site-main .work .contact-new {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 32px 0 !important;
+    margin-top: 60px !important;
+    margin-bottom: 0 !important;
+    box-sizing: border-box !important;
+  }
+  
+  html body .site-main .work .contact-new .contact-new-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 12px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Contact footer alignment for screens up to 1024px - override for other ranges */
 @media (max-width: 1024px) {
   .contact-new-content {
     margin: 0 !important;
     align-items: flex-start !important;
-    text-align: left !important;
+    text-align: center !important;
     max-width: 40ch !important;
     padding-left: 24px !important;
     padding-right: 0 !important;
   }
   
   .contact-new-label {
-    text-align: left !important;
+    text-align: center !important;
     position: static !important;
     margin-bottom: 0 !important;
   }
   
   .contact-new-title {
-    text-align: left !important;
+    text-align: center !important;
     max-width: 40ch !important;
     margin-top: 40px !important;
     margin-left: 0 !important;
@@ -3447,6 +4558,28 @@ body {
 @media (min-width: 850px) {
   .projects { 
     grid-template-columns: 1fr 1fr; 
+  }
+  
+  /* CTLS Wireframes image centering for desktop screens */
+  .wireframes-image {
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .wireframes-img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block !important;
   }
 }
 
@@ -3969,6 +5102,20 @@ body {
   width: auto;
   object-fit: contain;
 }
+
+/* Increase only the Edmunds logo in the table */
+img[src*="edmundslogo.png"] {
+  height: 100px !important;
+}
+
+/* Force Edmunds logo size with higher specificity */
+.competitor-logo img[src*="edmundslogo.png"],
+.carro-project .competitor-logo img[src*="edmundslogo.png"],
+.analysis-table img[src*="edmundslogo.png"],
+.carro-project .analysis-table img[src*="edmundslogo.png"] {
+  height: 100px !important;
+  max-height: 100px !important;
+}
 .carvana-logo {
   height: 32px;
 }
@@ -4181,9 +5328,9 @@ body {
 .problem-item {
   margin-bottom: 30px;
   padding: 20px;
-  background: white;
+  background: white !important;
   border-radius: 8px;
-  border: 1px solid #68C5D7;
+  border: 1px solid #68C5D7 !important;
   text-align: center;
 }
 .problem-number {
@@ -4448,10 +5595,6 @@ body {
   font-size: 16px !important;
 }
 
-/* Force video player margin for carro project */
-.carro-project .project-video-player {
-  margin-bottom: 60px !important;
-}
 
 /* Force persona content to be larger in carro project */
 .carro-project .persona-name {
@@ -4465,6 +5608,805 @@ body {
 /* Match persona category headers to insights headers */
 .carro-project .persona-category {
   font-size: 16px !important;
+}
+
+/* Mobile font hierarchy fixes for carro project - 390px-430px only */
+@media (min-width: 390px) and (max-width: 430px) {
+  /* Fix main section text sizes */
+  .carro-project .overview-text,
+  .carro-project .empathize-text,
+  .carro-project .define-text {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Fix persona content hierarchy */
+  .carro-project .persona-category {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+  }
+  
+  .carro-project .persona-name {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+  }
+  
+  .carro-project .persona-role {
+    font-size: 12px !important;
+  }
+  
+  /* Fix section headings */
+  .carro-project .overview-heading,
+  .carro-project .process-heading,
+  .carro-project .empathize-heading,
+  .carro-project .define-heading,
+  .carro-project .ideate-heading,
+  .carro-project .prototype-heading {
+    font-size: 20px !important;
+  }
+  
+  /* Fix sub-headings */
+  .carro-project .analysis-heading,
+  .carro-project .personas-heading,
+  .carro-project .questions-heading,
+  .carro-project .insights-heading,
+  .carro-project .problem-heading {
+    font-size: 16px !important;
+  }
+  
+  /* Fix box content */
+  .carro-project .audience-title,
+  .carro-project .goal-title,
+  .carro-project .insights-title {
+    font-size: 14px !important;
+  }
+  
+  .carro-project .audience-desc,
+  .carro-project .goal-desc,
+  .carro-project .insights-desc {
+    font-size: 12px !important;
+  }
+  
+  /* Fix table content */
+  .carro-project .analysis-table th,
+  .carro-project .analysis-table td {
+    font-size: 11px !important;
+    padding: 6px 4px !important;
+  }
+}
+
+/* Comprehensive responsive fixes for 430px-720px range */
+@media (min-width: 430px) and (max-width: 720px) {
+  /* Container and layout fixes - match 390-430px approach */
+  .container {
+    width: 96% !important;
+    padding: 0 20px !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Contact section - match 390-430px styling exactly */
+  .contact-new {
+    padding: 32px 0 !important;
+    margin: 60px 0 0 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+  }
+  
+  .contact-new-content {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 12px !important;
+  }
+  
+  .contact-new-title {
+    font-size: clamp(24px, 4vw, 32px) !important;
+    margin: 32px 0 0px 0 !important;
+  }
+  
+  .contact-new-button-container {
+    margin-top: 0px !important;
+  }
+  
+  .contact-new-button {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    max-width: 140px !important;
+    width: auto !important;
+  }
+  
+  /* Footer - match 390-430px styling exactly */
+  .site-footer {
+    padding: 20px 0 !important;
+    text-align: center !important;
+  }
+  
+  .site-footer p {
+    font-size: 12px !important;
+  }
+  
+  /* Contact page - move content down for 430-720px */
+  .contact-page {
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+  }
+  
+  .contact-page-content {
+    margin-top: 10px !important;
+  }
+  
+  /* Override center alignment for contact page in 430-720px range */
+  .contact-page .contact-label,
+  .contact-page .contact-title,
+  .contact-page .contact-details,
+  .contact-page .contact-item,
+  .contact-page .contact-label-item,
+  .contact-page .contact-value {
+    text-align: left !important;
+  }
+  
+  /* Prevent horizontal overflow */
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+  }
+  
+  /* Ensure all elements fit within viewport */
+  * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Hero section - match 390-430px approach */
+  .hero {
+    padding: 40px 0 60px !important;
+  }
+  
+  .hero-title {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 16px !important;
+    text-align: center !important;
+  }
+  
+  .hero-sub {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 24px !important;
+    text-align: center !important;
+  }
+  
+  /* Project detail content - match 390-430px approach */
+  .project-detail-content {
+    text-align: center !important;
+    padding: 20px 0 !important;
+  }
+  
+  /* Section headings - match 390-430px hierarchy */
+  .carro-project .overview-heading,
+  .carro-project .process-heading,
+  .carro-project .empathize-heading,
+  .carro-project .define-heading,
+  .carro-project .ideate-heading,
+  .carro-project .prototype-heading {
+    font-size: 20px !important;
+    text-align: center !important;
+  }
+  
+  /* Sub-headings - match 390-430px hierarchy */
+  .carro-project .analysis-heading,
+  .carro-project .personas-heading,
+  .carro-project .questions-heading,
+  .carro-project .insights-heading,
+  .carro-project .problem-heading {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+  
+  /* Text content - match 390-430px hierarchy */
+  .carro-project .overview-text,
+  .carro-project .empathize-text,
+  .carro-project .define-text {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+  }
+  
+  /* Persona content - match 390-430px hierarchy */
+  .carro-project .persona-category {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+  }
+  
+  .carro-project .persona-name {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+  }
+  
+  .carro-project .persona-role {
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+  
+  /* Box content - match 390-430px hierarchy */
+  .carro-project .audience-title,
+  .carro-project .goal-title,
+  .carro-project .insights-title {
+    font-size: 14px !important;
+    text-align: center !important;
+  }
+  
+  .carro-project .audience-desc,
+  .carro-project .goal-desc,
+  .carro-project .insights-desc {
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+  
+  /* Table content - match 390-430px hierarchy */
+  .carro-project .analysis-table th,
+  .carro-project .analysis-table td {
+    font-size: 11px !important;
+    padding: 6px 4px !important;
+    text-align: center !important;
+  }
+  
+  /* Video - match 390-430px approach */
+  .carro-project .project-video-player {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 20px auto !important;
+  }
+  
+  /* CTLS Video - Override inline styles for tablet view */
+  .project-video-player {
+    width: 90% !important;
+    max-width: 90% !important;
+    height: auto !important;
+    transform: none !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+  
+  /* Ensure video container doesn't cause overflow */
+  .project-video {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  /* Override CTLS inline video styles specifically for tablet */
+  body .project-video-player {
+    width: 90% !important;
+    max-width: 90% !important;
+    transform: none !important;
+  }
+  
+  /* Fix User Research section for tablet - prevent vertical stretching */
+  .project-empathize .research-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    grid-template-columns: none !important;
+    margin-top: 16px !important;
+  }
+  
+  .project-empathize .research-card {
+    width: 100% !important;
+    padding: 20px 24px !important;
+    min-height: auto !important;
+    text-align: center !important;
+    border-radius: 12px !important;
+  }
+  
+  /* Remove individual card padding adjustments for tablet */
+  .project-empathize .research-cards .research-card:nth-child(1),
+  .project-empathize .research-cards .research-card:nth-child(2) {
+    padding-top: 20px !important;
+  }
+  
+  /* Fix Key Insights section for tablet - prevent vertical stretching */
+  .insights-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    grid-template-columns: none !important;
+    margin-top: 16px !important;
+  }
+  
+  .insights-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 24px !important;
+    margin: 0 !important;
+    border-radius: 12px !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    min-height: auto !important;
+  }
+  
+  .insights-title {
+    font-size: 16px !important;
+    margin-bottom: 12px !important;
+    font-weight: 500 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+  
+  .insights-list {
+    display: block !important;
+    gap: 0 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .insights-list li {
+    padding: 4px 0 !important;
+    margin-bottom: 6px !important;
+    border: none !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    text-align: center !important;
+    line-height: 1.5 !important;
+    list-style-position: inside !important;
+    padding-left: 0 !important;
+  }
+  
+  .insights-list {
+    list-style-position: inside !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+  
+  /* Fix Information Architecture section (ideate-pills) for tablet - maintain super rounded look */
+  .ideate-pills {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    grid-template-columns: none !important;
+    margin: 20px 0 !important;
+  }
+  
+  .ideate-pill {
+    width: 100% !important;
+    padding: 20px 24px !important;
+    min-height: auto !important;
+    text-align: center !important;
+    border-radius: 9999px !important;
+    border: 1px solid #E55050 !important;
+    background: #ffffff !important;
+    line-height: 1.45 !important;
+    color: #4a5568 !important;
+  }
+  
+  .ideate-pill .pill-text {
+    font-weight: 200 !important;
+    color: #4a5568 !important;
+    line-height: 1.45 !important;
+  }
+  
+  /* Increase User Flow image size for tablet */
+  .user-flow-image {
+    width: 100% !important;
+    max-width: none !important;
+    overflow: visible !important;
+    margin: 20px 0 !important;
+    padding: 0 !important;
+  }
+  
+  .flow-image {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    max-width: none !important;
+    margin-left: 0% !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Fix and increase Wireframes image size for tablet */
+  .wireframes-image {
+    width: 100% !important;
+    max-width: none !important;
+    overflow: visible !important;
+    margin: 20px 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  
+  .wireframes-img {
+    width: 105% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    max-width: none !important;
+    margin-left: -2.5% !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Decrease font sizes in Carro Define section boxes for tablet */
+  .carro-project .problem-list .problem-item h4,
+  .carro-project .problem-list .problem-title {
+    font-size: 14px !important;
+  }
+  
+  .carro-project .problem-list .problem-item p,
+  .carro-project .problem-list .problem-desc {
+    font-size: 12px !important;
+  }
+  
+  .carro-project .goals-list .goal-item h4,
+  .carro-project .goals-list .goal-title {
+    font-size: 14px !important;
+  }
+  
+  .carro-project .goals-list .goal-item p,
+  .carro-project .goals-list .goal-desc {
+    font-size: 12px !important;
+  }
+  
+  /* Decrease MK Group Construction mk_old.avif image size for tablet */
+  .project-image--small img[src*="mk_old.avif"] {
+    width: 50% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  
+  /* Decrease text sizes for 430-850px range */
+  .project-detail-title {
+    font-size: 24px !important;
+  }
+  
+  .project-detail-desc {
+    font-size: 14px !important;
+  }
+  
+  .empathize-heading,
+  .process-heading,
+  .overview-heading,
+  .define-heading,
+  .ideate-heading,
+  .prototype-heading {
+    font-size: 18px !important;
+  }
+  
+  .empathize-text,
+  .overview-text,
+  .define-text,
+  .ideate-text,
+  .prototype-text {
+    font-size: 13px !important;
+  }
+  
+  .empathize-subheading,
+  .empathize-miniheading {
+    font-size: 16px !important;
+  }
+  
+  .showcase-heading {
+    font-size: 14px !important;
+  }
+  
+  .image-caption {
+    font-size: 12px !important;
+  }
+  
+  /* Consistent header styling for 390-430px mobile and tablet */
+  .hero-title {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .hero-sub {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #666 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .project-detail-title {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .project-detail-desc {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #666 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .empathize-heading,
+  .process-heading,
+  .overview-heading,
+  .define-heading,
+  .ideate-heading,
+  .prototype-heading {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .empathize-subheading,
+  .empathize-miniheading {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #666 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Decrease max width and center tagline for screens after 600px */
+  @media (min-width: 600px) {
+    .container {
+      max-width: 800px !important;
+    }
+    
+    .hero-sub {
+      text-align: center !important;
+    }
+    
+    .project-detail-desc {
+      text-align: center !important;
+    }
+  }
+  
+  /* Make hero heading look like the reference image for tablet breakpoints */
+  @media (min-width: 430px) and (max-width: 720px) {
+    .hero-title {
+      font-size: 28px !important;
+      font-weight: 400 !important;
+      line-height: 1.4 !important;
+      text-align: center !important;
+      max-width: 600px !important;
+      margin: 0 auto 16px auto !important;
+    }
+    
+    .hero-sub {
+      font-size: 14px !important;
+      font-weight: 400 !important;
+      color: #666 !important;
+      text-align: center !important;
+      margin-bottom: 32px !important;
+      font-family: 'Courier New', monospace !important;
+    }
+    
+    .container {
+      max-width: 700px !important;
+    }
+    
+    /* Style the highlighted "product designer" text */
+    .hero-title em,
+    .hero-title .highlight {
+      color: #3F9E9E !important;
+      font-style: italic !important;
+    }
+  }
+  
+  /* Decrease max width more for 430-600px range */
+  @media (min-width: 430px) and (max-width: 600px) {
+    .container {
+      max-width: 500px !important;
+    }
+    
+    .hero-title {
+      max-width: 450px !important;
+      font-size: 24px !important;
+    }
+    
+  .hero-sub {
+    font-size: 13px !important;
+  }
+  
+  /* Ensure "Product Design..." tagline is always center aligned */
+  .hero-sub,
+  .project-detail-desc {
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+  }
+  
+  /* Force center alignment for 430-480px range */
+  @media (min-width: 430px) and (max-width: 480px) {
+    body .hero-sub,
+    body .project-detail-desc {
+      text-align: center !important;
+      display: block !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+      padding: 0 !important;
+      float: none !important;
+      position: relative !important;
+      left: 0 !important;
+      right: 0 !important;
+      transform: none !important;
+    }
+    
+    /* Target with maximum specificity */
+    html body .hero .hero-sub,
+    html body .project-detail .project-detail-desc,
+    html body .hero-sub,
+    html body .project-detail-desc {
+      text-align: center !important;
+      display: block !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+      padding: 0 !important;
+      float: none !important;
+      position: relative !important;
+      left: 0 !important;
+      right: 0 !important;
+      transform: none !important;
+    }
+    
+    /* Force the parent container to center its content */
+    .hero,
+    .project-detail {
+      text-align: center !important;
+    }
+  }
+  
+  /* Desktop layout for 720px and above - use default desktop styles */
+  @media (min-width: 720px) {
+    /* Ensure desktop layout is used */
+    .hero {
+      text-align: left !important;
+    }
+    
+    .hero-title {
+      text-align: left !important;
+      max-width: 40ch !important;
+      margin: 0 0 10px !important;
+    }
+    
+    .hero-sub {
+      text-align: left !important;
+      max-width: 56ch !important;
+    }
+    
+    .about-card {
+      text-align: left !important;
+    }
+    
+    .project-card {
+      text-align: left !important;
+    }
+  }
+}
+
+/* LEFT ALIGN PROJECT CONTENT ACROSS ALL BREAKPOINTS */
+@media (min-width: 0px) {
+  /* Force left alignment for all project content */
+  .project-card {
+    text-align: left !important;
+  }
+  
+  .project-body {
+    text-align: left !important;
+  }
+  
+  .project-title {
+    text-align: left !important;
+  }
+  
+  .project-desc {
+    text-align: left !important;
+  }
+  
+  .project-top {
+    text-align: left !important;
+  }
+  
+  .project-tags {
+    text-align: left !important;
+  }
+  
+  .project-actions {
+    text-align: left !important;
+  }
+  
+  .project-year {
+    text-align: left !important;
+  }
+  
+  /* Additional override for the specific problematic range - removed to allow desktop layout */
+  
+  /* Extend the working 430-720px styling to 720-1024px */
+  @media (min-width: 430px) and (max-width: 720px) {
+    .hero-sub,
+    .project-detail-desc {
+      text-align: center !important;
+      display: block !important;
+      width: 100% !important;
+    }
+  }
+  }
+  
+  /* Images - match 390-430px approach */
+  img, video, iframe, embed, object {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Grid layouts - match 390-430px approach */
+  .carro-project .personas-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    gap: 12px !important;
+    margin: 20px 0 !important;
+  }
+  
+  /* Process steps - match 390-430px approach */
+  .carro-project .prototype-process {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin: 20px 0 !important;
+  }
+  
+  .carro-project .prototype-process .process-step {
+    font-size: 14px !important;
+    padding: 8px !important;
+    text-align: center !important;
+  }
+  
+  /* Move first row content down in tables - MAXIMUM SPECIFICITY */
+  .carro-project .analysis-table thead tr {
+    padding-top: 8px !important;
+  }
+  
+  .carro-project .analysis-table thead th {
+    padding-top: 8px !important;
+    padding-bottom: 6px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  
+  /* Override any conflicting padding rules for table headers */
+  .carro-project .competitor-analysis .analysis-table thead th,
+  .carro-project .heuristic-analysis .analysis-table thead th {
+    padding-top: 8px !important;
+    padding-bottom: 6px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  
+  /* ULTIMATE OVERRIDE - Force table header padding */
+  .carro-project .competitor-analysis .analysis-table th,
+  .carro-project .heuristic-analysis .analysis-table th,
+  .carro-project .analysis-table th {
+    padding-top: 8px !important;
+    padding-bottom: 6px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  
+  /* Reduce Edmunds logo size for tablet breakpoint */
+  .carro-project .analysis-table img[src*="edmundslogo.png"],
+  .carro-project .competitor-logo img[src*="edmundslogo.png"],
+  .carro-project .competitor-cell img[src*="edmundslogo.png"] {
+    height: 80px !important;
+    max-height: 80px !important;
+  }
 }
 .user-flow-heading {
   font-family: "Jura", sans-serif;
@@ -4525,3 +6467,462 @@ body {
 }
 
 
+/* FORCE CACHE CLEAR - Mon Oct 13 21:34:39 EDT 2025 */
+
+/* Standardize spacing for all project detail pages on mobile - match homepage cards */
+@media (max-width: 600px) {
+  .project-header {
+    margin-bottom: 10px !important;
+  }
+  
+  .project-video {
+    margin-bottom: 10px !important;
+  }
+}
+
+/* Override the 430px rule with more specific targeting */
+@media (max-width: 430px) {
+  .project-header {
+    margin-bottom: 10px !important;
+  }
+  
+  .project-video {
+    margin-bottom: 10px !important;
+  }
+}
+
+/* Specific rule for Carro card on homepage - reduce gap between image and title */
+@media (max-width: 600px) {
+  .project-card[href="carro.html"] {
+    gap: 6px !important;
+  }
+  
+  /* More specific targeting for carro card */
+  a[href="carro.html"].project-card {
+    gap: 6px !important;
+  }
+  
+  /* Even more specific targeting */
+  .work .project .project-card[href="carro.html"] {
+    gap: 6px !important;
+  }
+}
+
+/* Change main heading to Website Clients for mobile breakpoints */
+@media (max-width: 600px) {
+  .websites-project .project-detail-title:not([style*="margin-top"]) {
+    font-size: 0 !important;
+    position: relative !important;
+  }
+  
+  .websites-project .project-detail-title:not([style*="margin-top"])::before {
+    content: "Website Clients" !important;
+    font-size: 32px !important;
+    display: block !important;
+    font-weight: 300 !important;
+    color: var(--text) !important;
+  }
+  
+  /* Ensure MK Group Construction heading is same size */
+  .websites-project .project-detail-title[style*="margin-top"] {
+    font-size: 32px !important;
+    font-weight: 300 !important;
+  }
+}
+
+/* Ensure consistent heading sizes for all breakpoints */
+.websites-project .project-detail-title {
+  font-size: 32px !important;
+  font-weight: 300 !important;
+}
+
+/* Make headings larger for 600px and onward */
+@media (min-width: 600px) {
+  .websites-project .project-detail-title {
+    font-size: 40px !important;
+    font-weight: 300 !important;
+  }
+}
+
+/* Reduce phone mockup size for 390-430px breakpoint */
+@media (min-width: 390px) and (max-width: 430px) {
+  .phone-container {
+    max-width: 200px !important;
+  }
+  
+  .phone-image {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  .phone-screen {
+    top: 3% !important;
+    left: 6% !important;
+    width: 88% !important;
+    height: 94% !important;
+    border-radius: 20px !important;
+  }
+  
+  .phone-video {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 20px !important;
+  }
+  
+  /* Reduce section header sizes for mobile */
+  .overview-heading {
+    font-size: 20px !important;
+  }
+}
+
+/* Break title into two lines for mobile and small tablet view up to 600px */
+@media (max-width: 600px) {
+  .live-sports-project .project-detail-title {
+    font-size: 0 !important;
+    line-height: 1.1 !important;
+    position: relative !important;
+  }
+  
+  .live-sports-project .project-detail-title::before {
+    content: "Live Sports";
+    font-size: 32px !important;
+    display: block !important;
+    font-weight: 300 !important;
+    color: var(--text) !important;
+  }
+}
+
+/* Reduce image sizes for tablet view */
+@media (min-width: 430px) and (max-width: 720px) {
+  .design-img {
+    max-width: 70% !important;
+    height: auto !important;
+  }
+  
+  .development-img {
+    max-width: 350px !important;
+    height: auto !important;
+  }
+  
+  .project-img {
+    max-width: 70% !important;
+    height: auto !important;
+  }
+  
+  /* Move header content down for tablet */
+  .site-header {
+    padding-top: 12px !important;
+  }
+  
+  .nav {
+    padding-top: 6px !important;
+  }
+  
+  .nav .logo {
+    margin-top: 6px !important;
+  }
+  
+  .nav .nav-list {
+    margin-top: 6px !important;
+  }
+}
+
+/* Round video corners for tablet view */
+@media (min-width: 430px) and (max-width: 720px) {
+  .phone-container {
+    max-width: 250px !important;
+  }
+  
+  .phone-image {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  .phone-screen {
+    top: 3% !important;
+    left: 6% !important;
+    width: 88% !important;
+    height: 94% !important;
+    border-radius: 35px !important;
+  }
+  
+  .phone-video {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 35px !important;
+  }
+}
+
+/* CTLS Wireframes image centering for screens above 1024px */
+@media (min-width: 1024px) {
+  /* Override inline styles for wireframes image centering */
+  .wireframes-image {
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .wireframes-img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block !important;
+  }
+}
+
+/* Increase Edmunds logo size for desktop */
+@media (min-width: 1024px) {
+  .carro-project .analysis-table img[src*="edmundslogo.png"],
+  .carro-project .competitor-logo img[src*="edmundslogo.png"],
+  .carro-project .competitor-cell img[src*="edmundslogo.png"] {
+    height: 100px !important;
+    max-height: 100px !important;
+  }
+}
+
+/* Contact page styling for 720-1024px range */
+@media (min-width: 720px) and (max-width: 1024px) {
+  .contact-page {
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+  }
+  
+  .contact-page-content {
+    margin-top: 10px !important;
+  }
+}
+
+/* Increase space between video and Overview section on desktop */
+@media (min-width: 1024px) {
+  .carro-project .project-video {
+    margin-bottom: 60px !important;
+  }
+  
+  .carro-project .project-video-player {
+    margin-bottom: 60px !important;
+  }
+}
+
+/* MOVE CARRO TITLE UP - DIRECT APPROACH */
+@media (max-width: 600px) {
+  /* Move the carro title up by targeting the project-body */
+  .project-card[href="carro.html"] .project-body {
+    margin-top: -8px !important;
+    transform: translateY(-8px) !important;
+  }
+  
+  /* Alternative approach - move the entire content up */
+  .project-card[href="carro.html"] .project-body {
+    position: relative !important;
+    top: -8px !important;
+  }
+  
+  /* Target by position - carro is the second project */
+  .projects .project:nth-child(2) .project-body {
+    margin-top: -8px !important;
+    transform: translateY(-8px) !important;
+  }
+}
+
+/* CTLS Define section text size reduction for 430-720px */
+@media (min-width: 430px) and (max-width: 720px) {
+  .project-define .problem-text {
+    font-size: 14px !important;
+  }
+  
+  .project-define p {
+    font-size: 14px !important;
+  }
+  
+  .project-define .empathize-subheading {
+    font-size: 18px !important;
+  }
+  
+  /* Reduce font size for text inside boxes/cards in Define section */
+  .project-define .insights-list .insight-item p,
+  .project-define .insights-list .insight-item span,
+  .project-define .insights-list .insight-item div {
+    font-size: 12px !important;
+  }
+  
+  .project-define .insights-list .insight-item h4,
+  .project-define .insights-list .insight-item .insight-title {
+    font-size: 14px !important;
+  }
+  
+  /* Target any other text elements in Define section boxes */
+  .project-define .insight-item,
+  .project-define .problem-item,
+  .project-define .goal-item {
+    font-size: 12px !important;
+  }
+  
+  .project-define .insight-item h4,
+  .project-define .problem-item h4,
+  .project-define .goal-item h4 {
+    font-size: 14px !important;
+  }
+}
+
+/* Improve responsiveness of Problem section grid for 430px and beyond */
+@media (min-width: 430px) {
+  /* Problem section grid layout improvements */
+  .project-define .insights-list,
+  .project-define .problem-list,
+  .project-define .goals-list {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 20px !important;
+    margin: 20px 0 !important;
+  }
+  
+  /* Individual problem/insight/goal items */
+  .project-define .insight-item,
+  .project-define .problem-item,
+  .project-define .goal-item {
+    background: white !important;
+    border: 1px solid #68C5D7 !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+    box-shadow: none !important;
+  }
+  
+  /* Hover effects removed for Define section boxes */
+  
+  /* Text styling within the cards - increased font sizes */
+  .project-define .insight-item p,
+  .project-define .problem-item p,
+  .project-define .goal-item p {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    color: #475569 !important;
+  }
+  
+  .project-define .insight-item h4,
+  .project-define .problem-item h4,
+  .project-define .goal-item h4 {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    margin: 0 0 8px 0 !important;
+    color: #1e293b !important;
+  }
+  
+  /* Target all text elements in the boxes */
+  .project-define .insight-item,
+  .project-define .problem-item,
+  .project-define .goal-item {
+    font-size: 18px !important;
+  }
+  
+  .project-define .insight-item *,
+  .project-define .problem-item *,
+  .project-define .goal-item * {
+    font-size: 18px !important;
+  }
+  
+  /* More aggressive targeting for CTLS problem boxes */
+  .project-define .insights-list .insight-item,
+  .project-define .insights-list .insight-item p,
+  .project-define .insights-list .insight-item span,
+  .project-define .insights-list .insight-item div,
+  .project-define .insights-list .insight-item h4 {
+    font-size: 12px !important;
+  }
+  
+  /* Nuclear option - target everything in define section */
+  .project-define * {
+    font-size: 12px !important;
+  }
+  
+  /* Override any existing font sizes */
+  .project-define .insight-item,
+  .project-define .problem-item,
+  .project-define .goal-item,
+  .project-define .insight-item p,
+  .project-define .problem-item p,
+  .project-define .goal-item p,
+  .project-define .insight-item h4,
+  .project-define .problem-item h4,
+  .project-define .goal-item h4 {
+    font-size: 12px !important;
+  }
+  
+  /* Match Define header to Ideate header styling */
+  .project-define .empathize-heading {
+    font-size: 22px !important;
+    font-weight: 400 !important;
+    margin-bottom: 16px !important;
+  }
+  
+  /* Increase general text size for Define section */
+  .project-define .define-text,
+  .project-define .problem-intro,
+  .project-define .problem-solution {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Make bold text in Define section the same size as regular text */
+  .project-define .problem-solution strong,
+  .project-define .problem-solution b {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+  
+  /* Target problem titles specifically */
+  .project-define .problem-title,
+  .project-define .problem-header h4 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+  
+  /* Target problem descriptions */
+  .project-define .problem-desc,
+  .project-define .problem-content p,
+  .project-define .problem-item p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* More specific targeting for problem descriptions */
+  .carro-project .project-define .problem-desc,
+  .carro-project .project-define .problem-content p,
+  .carro-project .project-define .problem-item p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* Replace wireframes image with mobile version for CTLS project in 390-430px breakpoint */
+@media (min-width: 390px) and (max-width: 430px) {
+  /* Hide the original wireframes image */
+  .project-ideate .wireframes-img,
+  .project-ideate .wireframes-image,
+  .project-ideate img[src*="wireframes"],
+  .project-ideate img[src*="wireframe"] {
+    display: none !important;
+  }
+  
+  /* Show mobile wireframes image */
+  .project-ideate .mobile-wireframes {
+    display: block !important;
+  }
+  
+  .project-ideate .mobile-wireframes img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}

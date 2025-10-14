@@ -101,9 +101,46 @@
       height: 100%;
       object-fit: cover;
     }
-  </style>
-</head>
-<body>
+    </style>
+    <script>
+      // Ensure video autoplay works on mobile devices
+      document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('.phone-video');
+        if (video) {
+          // Set video attributes for mobile compatibility
+          video.setAttribute('autoplay', '');
+          video.setAttribute('muted', '');
+          video.setAttribute('loop', '');
+          video.setAttribute('playsinline', '');
+          
+          // Try to play the video
+          const playVideo = () => {
+            video.play().catch(function(error) {
+              console.log('Video autoplay prevented:', error);
+              // If autoplay fails, try again on first user interaction
+              document.addEventListener('click', function() {
+                video.play();
+              }, { once: true });
+            });
+          };
+          
+          // Play when video is ready
+          if (video.readyState >= 2) {
+            playVideo();
+          } else {
+            video.addEventListener('loadeddata', playVideo);
+          }
+          
+          // Restart video when it ends
+          video.addEventListener('ended', function() {
+            video.currentTime = 0;
+            video.play();
+          });
+        }
+      });
+    </script>
+  </head>
+<body class="live-sports-project">
   <a class="skip-link" href="#main">Skip to main content</a>
 
     <header class="site-header" data-reveal>
@@ -132,7 +169,7 @@
           <div class="phone-container">
             <img src="./assets/phone.png" alt="Phone mockup" class="phone-image" />
             <div class="phone-screen">
-              <video class="phone-video" autoplay muted loop>
+              <video class="phone-video" autoplay muted loop playsinline>
                 <source src="./assets/hackgt4.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>

@@ -37,6 +37,9 @@
     .project-image--small img {
       max-width: 20%;
     }
+    .project-image--medium img {
+      max-width: 35%;
+    }
     .image-caption {
       margin-top: 6px;
       font-size: 0.85rem;
@@ -141,9 +144,36 @@
         height: 3.0%;
       }
     }
+    
+    /* Reduce MK_Green.png image size for 390-430px breakpoint */
+    @media (min-width: 390px) and (max-width: 430px) {
+      .project-image--medium img {
+        max-width: 50% !important;
+      }
+    }
+    
+    /* Reduce MK_Green.png image size for 430-720px breakpoint */
+    @media (min-width: 430px) and (max-width: 720px) {
+      .project-image--medium img {
+        max-width: 35% !important;
+      }
+      .project-image--small img {
+        max-width: 25% !important;
+      }
+    }
+    
+    /* Reduce mk_old.avif image size for 720-1024px breakpoint */
+    @media (min-width: 720px) and (max-width: 1024px) {
+      .project-image--small img {
+        max-width: 25% !important;
+      }
+      .project-image--medium img {
+        max-width: 35% !important;
+      }
+    }
   </style>
 </head>
-<body>
+<body class="websites-project">
   <a class="skip-link" href="#main">Skip to main content</a>
 
     <header class="site-header" data-reveal>
@@ -190,6 +220,10 @@
             <img src="./assets/typo.png" alt="Typography system" loading="lazy" />
             <p class="image-caption">Typography</p>
           </div>
+        </div>
+        <div class="project-image project-image--spaced project-image--medium">
+          <img src="./assets/MK_Green.png" alt="MK Group Construction refreshed logo" loading="lazy" />
+          <p class="image-caption">Redesigned Logo</p>
         </div>
         <div class="macbook-video">
           <img src="./assets/macbook.png" alt="Website mockups on MacBook" />
