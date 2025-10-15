@@ -2239,6 +2239,7 @@ body {
     word-wrap: break-word !important;
     overflow-wrap: break-word !important;
     hyphens: none !important;
+    transform: translateX(-6px) !important;
   }
   
   .hero-sub {
