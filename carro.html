@@ -72,6 +72,16 @@
        .heuristic-analysis .analysis-table td:nth-child(2) { width: 40%; text-align: center; vertical-align: middle; }
        .heuristic-analysis .analysis-table th:nth-child(3),
        .heuristic-analysis .analysis-table td:nth-child(3) { width: 30%; vertical-align: middle; }
+
+      /* Increase wireframes image size for desktop */
+      @media (min-width: 1024px) {
+        .carro-project .wireframes-img {
+          width: 130% !important;
+          max-width: none !important;
+          transform: scale(1.15) !important;
+          margin-left: 0% !important;
+        }
+      }
     </style>
   </head>
   <body class="carro-project">
