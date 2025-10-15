@@ -2234,7 +2234,7 @@ body {
     font-size: clamp(18px, 4.5vw, 24px) !important;
     line-height: 1.8 !important;
     margin-bottom: 16px !important;
-    margin-left: 20px !important;
+    margin-left: 16px !important;
     text-align: center !important;
     word-wrap: break-word !important;
     overflow-wrap: break-word !important;
