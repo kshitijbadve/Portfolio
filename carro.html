@@ -82,6 +82,35 @@
           margin-left: 0% !important;
         }
       }
+
+      /* Key Issues layout */
+      .key-issues-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+        margin-top: 16px;
+      }
+      @media (min-width: 768px) {
+        .key-issues-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      .key-issue-box {
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        padding: 16px 20px;
+        background: #ffffff;
+      }
+      .key-issue-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+      .key-issue-text {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #4a5568;
+      }
     </style>
   </head>
   <body class="carro-project">
@@ -108,7 +137,7 @@
             </a>
             <h1 class="project-detail-title">carro</h1>
           </div>
-          <p class="project-detail-desc">A sleek mobile app for car enthusiasts and casual admirers to explore, compare, and learn about cars.</p>
+          <p class="project-detail-desc">A sleek mobile app for car enthusiasts, buyers, and casual admirers to explore, compare, and learn about cars.</p>
           <div class="project-video">
             <video autoplay loop muted playsinline class="project-video-player">
               <source src="./assets/carrovid2.mp4" type="video/mp4">
@@ -342,21 +371,21 @@
               <div class="prototype-process">
                 <span class="process-step">User Flows</span>
                 <span class="process-arrow">→</span>
-                <span class="process-step">Wireframes</span>
+                <span class="process-step">Featured Wireframes</span>
                 <span class="process-arrow">→</span>
-                <span class="process-step">High Fidelity Designs</span>
+                <span class="process-step">Featured High Fidelity Designs</span>
                 <span class="process-arrow">→</span>
                 <span class="process-step">Prototype</span>
               </div>
               
               <h3 class="user-flow-heading">User Flow</h3>
               <div class="user-flow-image">
-                <img src="./assets/Frame 28 (4).png" alt="User Flow Diagram" class="flow-image" />
+                <img src="./assets/Frame 38.png" alt="User Flow Diagram" class="flow-image" />
               </div>
               
-              <h3 class="wireframes-heading">Wireframes</h3>
+              <h3 class="wireframes-heading">Featured Wireframes</h3>
               <div class="wireframes-image">
-                <img src="./assets/Frame 29 (2).png" alt="Wireframes" class="wireframes-img" />
+                <img src="./assets/Frame 29 (2).png" alt="Featured Wireframes" class="wireframes-img" />
                 <!-- Mobile images for 390-430px breakpoint -->
                 <div class="mobile-wireframes">
                   <img src="./assets/carro_mobile.png" alt="Carro Mobile Design 1" class="mobile-wireframe-img mobile-wireframe-1" />
@@ -364,9 +393,9 @@
                 </div>
               </div>
               
-              <h3 class="high-fidelity-heading">High Fidelity Designs</h3>
+              <h3 class="high-fidelity-heading">Featured High Fidelity Designs</h3>
               <div class="high-fidelity-image">
-                <img src="./assets/Frame 33 (2).png" alt="High Fidelity Designs" class="high-fidelity-img" />
+                <img src="./assets/Frame 37 (2).png" alt="Featured High Fidelity Designs" class="high-fidelity-img" />
               </div>
               <h2 class="empathize-heading" style="margin-top: 48px !important;">Test</h2>
               <h3 class="high-fidelity-heading">Heuristic Evaluation</h3>
@@ -409,6 +438,37 @@
                   </tbody>
                 </table>
               </div>
+              
+              <h2 class="overview-heading" style="margin-top: 48px !important;">Iteration</h2>
+              <h3 class="high-fidelity-heading">Key Issues</h3>
+              <div class="goals-list" style="margin-top: 16px !important;">
+                <div class="goal-item">
+                  <h4 class="goal-title">Limited Search</h4>
+                  <p class="goal-desc">Users couldn't search for specific cars.</p>
+                </div>
+                <div class="goal-item">
+                  <h4 class="goal-title">Lacking App Info</h4>
+                  <p class="goal-desc">No guidance for how the app works.</p>
+                </div>
+              </div>
+              <h3 class="high-fidelity-heading" style="margin-top: 64px !important;">Iteration Goals</h3>
+              <ul class="overview-text" style="margin-top: 12px !important; list-style: disc; list-style-position: inside; padding-left: 0; font-size: 16px;">
+                <li style="margin-bottom: 14px;">Improve ability to find specific cars</li>
+                <li style="margin-bottom: 14px;">Increase personalization by displaying recommended and recently viewed cars</li>
+                <li>Enhance clarity and user understanding of app</li>
+              </ul>
+              <h3 class="high-fidelity-heading">Updated User Flow</h3>
+              <div class="user-flow-image">
+                <img src="./assets/Frame 36.png" alt="Updated User Flow" class="flow-image" />
+              </div>
+              <h3 class="high-fidelity-heading">Reflected Design Updates</h3>
+              <div class="high-fidelity-image">
+                <img src="./assets/Frame 39 (3).png" alt="Reflected Design Updates" class="high-fidelity-img" />
+              </div>
+              <h3 class="high-fidelity-heading">Next Steps</h3>
+              <p class="overview-text" style="margin-top: 12px !important;">
+                From here, the next steps are to continue conducting usability testing to reveal further pain points, measure how changes affect engagement and retention, and improve the onboarding experience with a walkthrough.
+              </p>
             </div>
           </div>
         </div>
