@@ -1555,7 +1555,7 @@ body {
     border-bottom: 1px solid #e2e8f0 !important;
     text-align: center !important;
     vertical-align: middle !important;
-    color: #68C5D7 !important;
+    color: #228095 !important;
     text-transform: uppercase !important;
     letter-spacing: 0.5px !important;
     min-height: 40px !important;
@@ -1661,7 +1661,7 @@ body {
     border-bottom: 1px solid #e2e8f0 !important;
     text-align: center !important;
     vertical-align: middle !important;
-    color: #68C5D7 !important;
+    color: #228095 !important;
     text-transform: uppercase !important;
     letter-spacing: 0.5px !important;
     min-height: 40px !important;
@@ -1700,7 +1700,7 @@ body {
     margin: 0 !important;
     background: white !important;
     border-radius: 8px !important;
-    border: 1px solid #68C5D7 !important;
+    border: 1px solid #228095 !important;
   }
   
   .carro-project .insights-list {
@@ -1769,7 +1769,7 @@ body {
   .carro-project .prototype-process .process-arrow {
     font-size: 12px !important;
     flex-shrink: 0 !important;
-    color: #68C5D7 !important;
+    color: #228095 !important;
   }
   
   /* Optimize process steps grid */
@@ -4945,7 +4945,7 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 2px;
-  background: #68C5D7;
+  background: #228095;
   border-radius: 1px;
 }
 .overview-text {
@@ -4978,7 +4978,7 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 2px;
-  background: #68C5D7;
+  background: #228095;
   border-radius: 1px;
 }
 .process-steps {
@@ -4998,7 +4998,7 @@ body {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: #68C5D7;
+  background: #228095;
   color: white;
   display: flex;
   align-items: center;
@@ -5045,7 +5045,7 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 2px;
-  background: #68C5D7;
+  background: #228095;
   border-radius: 1px;
 }
 .empathize-content {
@@ -5081,13 +5081,13 @@ body {
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid #68C5D7;
+  border: 1px solid #228095;
 }
 .analysis-table th {
   font-family: "Jura", sans-serif;
   font-size: 12px;
   font-weight: 600;
-  color: #68C5D7;
+  color: #228095;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   padding: 20px 16px 20px 8px;
@@ -5194,7 +5194,7 @@ img[src*="edmundslogo.png"] {
   font-family: "Jura", sans-serif;
   font-size: 18px;
   font-weight: 600;
-  color: #68C5D7;
+  color: #228095;
   margin: 0 0 20px;
 }
 .persona-item {
@@ -5202,7 +5202,7 @@ img[src*="edmundslogo.png"] {
   padding: 12px;
   background: white;
   border-radius: 8px;
-  border: 1px solid #68C5D7;
+  border: 1px solid #228095;
 }
 .persona-name {
   font-family: "Jura", sans-serif;
@@ -5264,13 +5264,13 @@ img[src*="edmundslogo.png"] {
   padding: 20px;
   background: white;
   border-radius: 8px;
-  border: 1px solid #68C5D7;
+  border: 1px solid #228095;
 }
 .insights-title {
   font-family: "Jura", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: #68C5D7;
+  color: #228095;
   margin: 0 0 16px;
 }
 .insights-list {
@@ -5307,7 +5307,7 @@ img[src*="edmundslogo.png"] {
   transform: translateX(-50%);
   width: 80px;
   height: 2px;
-  background: #68C5D7;
+  background: #228095;
   border-radius: 1px;
 }
 .define-content {
@@ -5357,14 +5357,14 @@ img[src*="edmundslogo.png"] {
   padding: 20px;
   background: white !important;
   border-radius: 8px;
-  border: 1px solid #68C5D7 !important;
+  border: 1px solid #228095 !important;
   text-align: center;
 }
 .problem-number {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: #68C5D7;
+  background: #228095;
   color: white;
   display: flex;
   align-items: center;
@@ -5404,7 +5404,7 @@ img[src*="edmundslogo.png"] {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: #68C5D7;
+  background: #228095;
   color: white;
   display: flex;
   align-items: center;
@@ -5436,7 +5436,7 @@ img[src*="edmundslogo.png"] {
   transform: translateX(-50%);
   width: 80px;
   height: 2px;
-  background: #68C5D7;
+  background: #228095;
   border-radius: 1px;
 }
 .ideate-content {
@@ -5461,14 +5461,14 @@ img[src*="edmundslogo.png"] {
   padding: 20px;
   background: white;
   border-radius: 8px;
-  border: 1px solid #68C5D7;
+  border: 1px solid #228095;
   text-align: center;
 }
 .audience-title {
   font-family: "Jura", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: #68C5D7;
+  color: #228095;
   margin: 0 0 8px;
 }
 .audience-desc {
@@ -5497,14 +5497,14 @@ img[src*="edmundslogo.png"] {
   padding: 20px;
   background: white;
   border-radius: 8px;
-  border: 1px solid #68C5D7;
+  border: 1px solid #228095;
   text-align: center;
 }
 .goal-title {
   font-family: "Jura", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: #68C5D7;
+  color: #228095;
   margin: 0 0 8px;
 }
 .goal-desc {
@@ -5537,7 +5537,7 @@ img[src*="edmundslogo.png"] {
   transform: translateX(-50%);
   width: 80px;
   height: 2px;
-  background: #68C5D7;
+  background: #228095;
   border-radius: 1px;
 }
 .prototype-content {
@@ -6821,7 +6821,7 @@ img[src*="edmundslogo.png"] {
   .project-define .problem-item,
   .project-define .goal-item {
     background: white !important;
-    border: 1px solid #68C5D7 !important;
+    border: 1px solid #228095 !important;
     border-radius: 8px !important;
     padding: 20px !important;
     text-align: center !important;
